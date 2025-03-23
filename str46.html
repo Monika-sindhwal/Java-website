@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.util.Scanner;
+
+            class A {
+            
+            
+                public static String reverseWords(String str) {
+                    String[] words = str.split(" "); 
+                    StringBuilder reversed = new StringBuilder();
+            
+                    for (int i = words.length - 1; i >= 0; i--) {
+                        reversed.append(words[i]); 
+                        if (i != 0) {
+                            reversed.append(" "); 
+                        }
+                    }
+            
+                    return reversed.toString();
+                }
+            
+                public static void main(String[] args) {
+                    Scanner scanner = new Scanner(System.in);
+            
+                    System.out.print("Enter a string: ");
+                    String input = scanner.nextLine();
+            
+                    String result = reverseWords(input);
+                    System.out.println("String after reversing words: " + result);
+            
+                    scanner.close();
+                }
+            }
+             
+            
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA2>javac str46.java
+
+            F:\JAVA2>java A
+            Enter a string: hello world
+            String after reversing words: world hello
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

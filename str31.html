@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.util.Scanner;
+
+            class A {
+                public static void main(String[] args) {
+                    Scanner scanner = new Scanner(System.in);
+            
+                    System.out.print("Enter a string: ");
+                    String input = scanner.nextLine();
+            
+                    System.out.print("Enter the index of the character to get : ");
+                    int index = scanner.nextInt();
+            
+                    if (index >= 0 && index < input.length()) {
+                        char character = input.charAt(index);
+                        System.out.println("Character at position " + index + " is: " + character);
+                    } else {
+                        System.out.println("Invalid position.");
+                    }
+                }
+            }
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA2>javac str31.java
+
+            F:\JAVA2>java A
+            Enter a string: hello
+            Enter the index of the character to get : 2
+            Character at position 2 is: l 
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

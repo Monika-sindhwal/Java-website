@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.util.Scanner;
+
+            class A {
+            
+                
+                public static boolean haveSameCharacters(String str1, String str2) {
+                   
+                    char[] charArray1 = str1.toCharArray();
+                    char[] charArray2 = str2.toCharArray();
+                    
+                    java.util.Arrays.sort(charArray1);
+                    java.util.Arrays.sort(charArray2);
+            
+                    return java.util.Arrays.equals(charArray1, charArray2);
+                }
+            
+                public static void main(String[] args) {
+                    Scanner scanner = new Scanner(System.in);
+            
+                    System.out.print("Enter the first string: ");
+                    String str1 = scanner.nextLine();
+            
+                    System.out.print("Enter the second string: ");
+                    String str2 = scanner.nextLine();
+            
+                    if (haveSameCharacters(str1, str2)) {
+                        System.out.println("The strings are created with the same characters.");
+                    } else {
+                        System.out.println("The strings are NOT created with the same characters.");
+                    }
+            
+                    scanner.close();
+                }
+            }
+            
+            
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA2>javac str47.java
+
+            F:\JAVA2>java A
+            Enter the first string: listen
+            Enter the second string: silent
+            The strings are created with the same characters.
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class A {
+
+    
+                public static String removeWhiteSpaces(String str) {
+                    return str.replaceAll("\\s+", ""); 
+                }
+            
+                public static void main(String[] args) {
+                    Scanner scanner = new Scanner(System.in);
+            
+                    System.out.print("Enter a string: ");
+                    String input = scanner.nextLine();
+            
+                    String result = removeWhiteSpaces(input);
+                    System.out.println("String after removing white spaces: " + result);
+            
+                    scanner.close();
+                }
+            }
+            
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA2>javac str37.java
+
+            F:\JAVA2>java A
+            Enter a string: hello world
+            String after removing white spaces: helloworld
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

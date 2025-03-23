@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class A {
+                public static void main(String[] args) {
+                    int count = 0;
+                    int number = 2; 
+                    int sum = 0;
+            
+                    while (count &lt; 100) {
+                        if (isPrime(number)) {
+                            sum += number; 
+                            count++; 
+                        }
+                        number++; 
+                    }
+            
+                    System.out.println("The sum of the first 100 prime numbers is: " + sum);
+                }
+            
+                
+                public static boolean isPrime(int num) {
+                    if (num &lt;= 1) {
+                        return false;
+                    }
+                    for (int i = 2; i &lt;= Math.sqrt(num); i++) {
+                        if (num % i == 0) {
+                            return false;
+                        }
+                    }
+                    return true; 
+                }
+            }
+            
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+           
+            The sum of the first 100 prime numbers is: 24133
+
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

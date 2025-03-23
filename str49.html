@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class A {
+
+   
+                public static String reverseString(String str) {
+                    StringBuffer stringBuffer = new StringBuffer(str); 
+                    return stringBuffer.reverse().toString(); }
+            
+                public static void main(String[] args) {
+                    Scanner scanner = new Scanner(System.in);
+            
+                    System.out.print("Enter a string: ");
+                    String input = scanner.nextLine();
+            
+                    String result = reverseString(input);
+                    System.out.println("Reversed string: " + result);
+            
+                    scanner.close();
+                }
+            }  
+            
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA2>javac str49.java
+
+            F:\JAVA2>java A
+            Enter a string: hello
+            Reversed string: olleh 
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

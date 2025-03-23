@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+          class A {
+            public static void main(String[] args) {
+                String input = "abcHHKKLKKGFDVBj";
+                int n = 5;
+        
+                divideString(input, n);
+            }
+        
+            public static void divideString(String str, int n) {
+                int length = str.length();
+                if (length % n != 0) {
+                    System.out.println("Cannot divide the string into equal parts.");
+                    return;
+                }
+        
+                int partLength = length / n;
+                for (int i = 0; i < n; i++) {
+                    String part = str.substring(i * partLength, (i + 1) * partLength);
+                    System.out.println("Part " + (i + 1) + ": " + part);
+                }
+            }
+        }
+        
+            
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+           
+          F:\JAVA>javac str19.java
+
+          F:\JAVA>java A
+          Cannot divide the string into equal parts.
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

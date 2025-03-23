@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.io.BufferedReader;
+            import java.io.IOException;
+            import java.io.InputStreamReader;
+            
+            class A {
+                public static String remove(String input, char charToRemove) {
+                    String result = "";
+                    for (int i = 0; i &lt; input.length(); i++) {
+                        char currentChar = input.charAt(i);
+                        if (currentChar != charToRemove) {
+                            result += currentChar;
+                        }
+                    }
+                    return result;
+                }
+            
+                public static void main(String[] args) throws IOException {
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+                    System.out.print("Enter a string: ");
+                    String s1 = reader.readLine();
+                    System.out.print("Enter the character to remove: ");
+                    char charToRemove = (char) reader.read();
+                    String result = remove(s1, charToRemove);
+                    System.out.println("String after removing '" + charToRemove + "': " + result);
+                }
+            }
+            
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA2>javac str4.java
+
+            F:\JAVA2>java A
+            Enter a string: Hellooooo
+            Enter the character to remove: o
+            String after removing 'o': Hell
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

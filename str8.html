@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class Main {
+                public static void main(String[] args) {
+                    String initialString = "Hello World";
+                    System.out.println("Initial String: " + initialString);
+            
+                    char[] charactersToAdd = {'!', 'W', 'e', 'l', 'c', 'o', 'm','e'};
+            
+                    StringBuilder stringBuilder = new StringBuilder(initialString);
+            
+                    for (int i = 0; i &lt; charactersToAdd.length; i++) {
+                        stringBuilder.append(charactersToAdd[i]); 
+                    }
+            
+                    String finalString = stringBuilder.toString();
+                    System.out.println("Final String after adding characters: " + finalString);
+                }
+            }
+            
+            
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA2>javac str8.java
+
+            F:\JAVA2>java Main
+            Initial String: Hello World
+            Final String after adding characters: Hello World!Welcome
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

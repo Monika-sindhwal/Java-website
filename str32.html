@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.util.Scanner;
+
+            class A {
+                public static void main(String[] args) {
+                    Scanner scanner = new Scanner(System.in);
+            
+                    System.out.print("Enter the main string: ");
+                    String mainString = scanner.nextLine();
+            
+                    System.out.print("Enter the string to insert: ");
+                    String insertString = scanner.nextLine();
+            
+                    System.out.print("Enter the position to insert the string: ");
+                    int position = scanner.nextInt();
+            
+                    if (position >= 0 && position <= mainString.length()) {
+                        String result = mainString.substring(0, position) + insertString + mainString.substring(position);
+                        System.out.println("Resulting string: " + result);
+                    } else {
+                        System.out.println("Invalid position.");
+                    }
+                }}
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA2>javac str32.java
+
+            F:\JAVA2>java A
+            Enter the main string: hello
+            Enter the string to insert: world
+            Enter the position to insert the string: 3
+            Resulting string: helworldlo
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

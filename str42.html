@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.util.Scanner;
+
+            class A {
+            
+              
+                public static void swapStrings(String str1, String str2) {
+                  
+                    str1 = str1 + str2; 
+                    str2 = str1.substring(0, str1.length() - str2.length());
+                    str1 = str1.substring(str2.length());
+            
+                
+                    System.out.println("After swapping:");
+                    System.out.println("str1: " + str1);
+                    System.out.println("str2: " + str2);
+                }
+            
+                public static void main(String[] args) {
+                    Scanner scanner = new Scanner(System.in);
+            
+                    System.out.print("Enter first string (str1): ");
+                    String str1 = scanner.nextLine();
+            
+                    System.out.print("Enter second string (str2): ");
+                    String str2 = scanner.nextLine();
+            
+                    swapStrings(str1, str2);
+            
+                    scanner.close();
+                }
+            }
+            
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA2>javac str42.java
+
+            F:\JAVA2>java A
+            Enter first string (str1): hello
+            Enter second string (str2): world
+            After swapping:
+            str1: world
+            str2: hello
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class A{
+                public static void main(String[] args) {
+                   
+                    String original = "Hello!";
+            
+                    String copy = new String(original);
+                    original= "what's up";
+                    System.out.println("Original String: " + original);                  System.out.println("Deep Copy String: " + copy); 
+                }
+            }
+            
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac str2.java
+
+            F:\JAVA>java A
+            Original String: what's up
+            Deep Copy String: Hello!
+            
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>
