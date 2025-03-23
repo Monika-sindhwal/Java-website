@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.util.Scanner;
+
+            class A {
+                public static void main(String[] args) {
+            
+                    Scanner scanner = new Scanner(System.in);
+                    
+                    System.out.print("Enter the base number: ");
+                    double b = scanner.nextDouble();
+                    
+                    System.out.print("Enter the exponent: ");
+                    double e = scanner.nextDouble();
+                    
+                    double result = Math.pow(b, e);
+                    
+                    System.out.println(b + " raised to the power of " + e + " is: " + result);
+                }
+            }
+              
+              
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA2>javac bpc51.java
+
+            F:\JAVA2>java A
+            Enter the base number: 2
+            Enter the exponent: 4
+            2.0 raised to the power of 4.0 is: 16.0 
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

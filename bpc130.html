@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class A {
+                public static void main(String[] args) {
+                    System.out.println("Prime numbers between 1 and 20:");
+                    displayPrimeNumbers(1, 20);
+                }
+            
+                
+                public static void displayPrimeNumbers(int start, int end) {
+                    for (int num = start; num <= end; num++) {
+                        if (isPrime(num)) {
+                            System.out.print(num + " ");
+                        }
+                    }
+                    System.out.println(); 
+                }
+            
+                
+                public static boolean isPrime(int num) {
+                    if (num <= 1) {
+                        return false; }
+                    for (int i = 2; i <= Math.sqrt(num); i++) {
+                        if (num % i == 0) {
+                            return false; 
+                        }
+                    }
+                    return true; 
+                }
+            }
+              
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA2>javac bpc130.java
+
+            F:\JAVA2>java A
+            Prime numbers between 1 and 20:
+            2 3 5 7 11 13 17 19 
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

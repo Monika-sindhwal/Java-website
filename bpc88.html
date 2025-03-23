@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.util.Arrays;
+
+            class A {
+                public static void main(String[] args) {
+                   
+                    int[] array = {1, 2, 3, 8, 9};
+            
+                    
+                    System.out.println("Original array: " + Arrays.toString(array));
+            
+                  
+                    reverseArray(array);
+            
+                    
+                    System.out.println("Reversed array: " + Arrays.toString(array));
+                }
+            
+                
+                public static void reverseArray(int[] array) {
+                    int start = 0;
+                    int end = array.length - 1;
+            
+                    while (start < end) {
+                        
+                        int temp = array[start];
+                        array[start] = array[end];
+                        array[end] = temp;
+            
+                        start++;
+                        end--;
+                    }
+                }
+            }
+            
+            
+              
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA2>javac bpc88.java
+
+            F:\JAVA2>java A
+            Original array: [1, 2, 3, 8, 9]
+            Reversed array: [9, 8, 3, 2, 1] 
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

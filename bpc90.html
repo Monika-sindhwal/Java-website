@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.util.Arrays;
+
+             class A {
+                public static void main(String[] args) {
+                    int[] numbers = {1, 3, 5, 7, 3, 9, 5, 1, 2, 9, 4}; 
+                    findDuplicates(numbers);
+                }
+            
+                public static void findDuplicates(int[] array) {
+                    Arrays.sort(array);
+            
+                    System.out.println("Duplicate values in the array:");
+                    for (int i = 0; i &lt; array.length - 1; i++) {
+                        if (array[i] == array[i + 1]) {
+                            System.out.print(array[i] + " ");
+                            
+                            // Skip the duplicate elements
+                            while (i &lt; array.length - 1 && array[i] == array[i + 1]) {
+                                i++;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            Duplicate values in the array:
+            1 3 5 9 
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

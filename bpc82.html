@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.io.*;
+
+            class A {
+                public static void main(String[] args)throws java.io.IOException {
+                    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            
+                    System.out.print("Enter the number of elements in the array: ");
+                    int n = Integer.parseInt(br.readLine());
+            
+                    int[] arr = new int[n];
+            
+                    System.out.println("Enter the elements: ");
+                    for (int i = 0; i < n; i++) {
+                        arr[i] = Integer.parseInt(br.readLine());
+                    }
+            
+                    int sum = 0;
+            
+                    for (int i = 0; i < n; i++) {
+                        sum += arr[i];
+                    }
+            
+                    System.out.println("The sum of the array elements is: " + sum);
+                }
+            }    
+              
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA2>javac bpc82.java
+
+            F:\JAVA2>java A
+            Enter the number of elements in the array: 4
+            Enter the elements:
+            1
+            2
+            3
+            4
+            The sum of the array elements is: 10   
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

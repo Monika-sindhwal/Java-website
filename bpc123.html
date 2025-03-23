@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class A {
+                public static void main(String[] args) {
+                    
+                    String s1 = "Welcome to the world of java!.";
+            
+                    
+                    int vowelCount = countVowels(s1);
+            
+               
+                    System.out.println("Total number of vowels: " + vowelCount);
+                }
+            
+                
+                public static int countVowels(String str) {
+                    int count = 0; 
+            
+                    
+                    str = str.toLowerCase();
+            
+                    
+                    for (int i = 0; i < str.length(); i++) {
+                        char c = str.charAt(i); 
+                      
+                        if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+                            count++; 
+                        }
+                    }
+            
+                    return count;
+                }
+            }
+            
+              
+              
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA2>javac bpc123.java
+
+            F:\JAVA2>java A
+            Total number of vowels: 9
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

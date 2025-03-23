@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.util.Scanner;
+
+            class A {
+                public static void main(String[] args) {
+                    
+                    Scanner scanner = new Scanner(System.in);
+                    System.out.print("Enter the x-coordinate of the first point: ");
+                    double x1 = scanner.nextDouble();
+                    System.out.print("Enter the y-coordinate of the first point: ");
+                    double y1 = scanner.nextDouble();
+                    System.out.print("Enter the x-coordinate of the second point: ");
+                    double x2 = scanner.nextDouble();
+                    System.out.print("Enter the y-coordinate of the second point: ");
+                    double y2 = scanner.nextDouble();
+            
+                    double distance = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+            
+                    System.out.printf("The distance between the points (%.2f, %.2f) and (%.2f, %.2f) is: %.2f%n", 
+                                      x1, y1, x2, y2, distance);
+            
+                  
+                    scanner.close();
+                }
+            }
+            
+              
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA2>javac bpc50.java
+
+            F:\JAVA2>java A
+            Enter the x-coordinate of the first point: 2
+            Enter the y-coordinate of the first point: 2
+            Enter the x-coordinate of the second point: 5
+            Enter the y-coordinate of the second point: 5
+            The distance between the points (2.00, 2.00) and (5.00, 5.00) is: 4.24
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

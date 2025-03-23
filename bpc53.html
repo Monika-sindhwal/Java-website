@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.io.*;
+class A{
+public static void main(String s[]) throws java.io.IOException{
+InputStreamReader isr=new InputStreamReader(System.in);
+BufferedReader obj=new BufferedReader(isr);
+System.out.print("Enter the month:");
+String month= obj.readLine().toLowerCase();
+
+if(month.equals("january") || month.equals("march") || month.equals("may") || month.equals("july") || month.equals("august") || month.equals("october") || month.equals("december"))
+System.out.println("31 days");
+else if( month.equals("february") )
+System.out.println("28 or 29 days");
+else
+System.out.println("30 days");
+}
+}
+
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            D:\java>javac bpc53.java
+
+            D:\java>java A
+            Enter the month:july
+            31 days
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

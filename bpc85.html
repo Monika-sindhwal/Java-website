@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.io.*;
+
+            class A {
+                public static void main(String[] args)throws java.io.IOException {
+                    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            
+                    System.out.print("Enter the number of elements in the array: ");
+                    int n = Integer.parseInt(br.readLine());
+            
+                    int[] arr = new int[n];
+            
+                    System.out.println("Enter the elements of the array: ");
+                    for (int i = 0; i < n; i++) {
+                        arr[i] = Integer.parseInt(br.readLine());
+                    }
+             
+                    System.out.print("Enter the value to search: ");
+                    int value = Integer.parseInt(br.readLine());
+            
+                    boolean found = false;
+            
+                    for (int i = 0; i < n; i++) {
+                        if (arr[i] == value) {
+                            found = true;
+                            break;
+                        }
+                    }
+            
+                    if (found) {
+                        System.out.println("The array contains the value " + value);
+                    } else {
+                        System.out.println("The array does not contain the value " + value);
+                    }
+                }
+            }
+            
+            
+            
+              
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA2>javac bpc85.java
+
+            F:\JAVA2>java A
+            Enter the number of elements in the array: 4
+            Enter the elements of the array:
+            1
+            2
+            3
+            4
+            Enter the value to search: 2
+            The array contains the value 2 
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

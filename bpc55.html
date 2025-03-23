@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.io.*;
+            class A{
+            public static void main(String args[])throws java.io.IOException{
+            InputStreamReader isr=new InputStreamReader(System.in);
+            BufferedReader obj=new BufferedReader(isr);
+            System.out.print("Enter a number:");
+            int num1=Integer.parseInt(obj.readLine());
+            switch (num1) {
+                case 1:
+                  System.out.println("Hey it's Sunday!");
+                    break;
+                case 2:
+                  System.out.println("Hey it's Monday!");
+                    break;
+             case 3:
+                  System.out.println("Hey it's Tuesday!");
+                    break;
+             case 4:
+                  System.out.println("Hey it's Wednesday!");
+                    break;
+             case 5:
+                  System.out.println("Hey it's Thursday!");
+                    break;
+             case 6:
+                  System.out.println("Hey it's Friday!");
+                    break;
+             case 7:
+                  System.out.println("Hey it's Saturday!");
+                    break;
+               
+                default:
+            System.out.println("Enter a valid number for days");
+                    
+            }
+            }
+            }
+            
+             
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            D:\java4231>javac bpc55.java
+
+            D:\java4231>java A
+            Enter a number:5
+            Hey it's Thursday!
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

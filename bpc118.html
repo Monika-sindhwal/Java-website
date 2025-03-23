@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.util.Scanner;
+
+            class A {
+                public static void main(String[] args) {
+                    Scanner scanner = new Scanner(System.in);
+                    
+                    System.out.print("Enter the number of terms in the Fibonacci series: ");
+                    int n = scanner.nextInt();
+                    
+                    int firstTerm = 0;
+                    int secondTerm = 1;
+            
+                    System.out.print("Fibonacci Series: ");
+            
+                    for (int i = 1; i <= n; i++) {
+                        System.out.print(firstTerm + " ");
+                        
+                        int nextTerm = firstTerm + secondTerm;
+                        firstTerm = secondTerm;
+                        secondTerm = nextTerm;
+                    }
+                }
+            }
+
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            The area of the pentagon is: 43.01
+            F:\JAVA2>javac bpc118.java
+            
+            F:\JAVA2>java A
+            Enter the number of terms in the Fibonacci series: 5
+            Fibonacci Series: 0 1 1 2 3
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

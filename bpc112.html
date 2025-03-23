@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.util.Scanner;
+
+            class A {
+                public static void main(String[] args) {
+                    Scanner scanner = new Scanner(System.in);
+            
+                    System.out.print("Enter a number to check if it's prime: ");
+                    int number = scanner.nextInt();
+            
+                    if (isPrime(number)) {
+                        System.out.println(number + " is a prime number.");
+                    } else {
+                        System.out.println(number + " is not a prime number.");
+                    }
+                }
+            
+                public static boolean isPrime(int num) {
+                    if (num &lt;= 1) {
+                        return false; 
+                    }
+            
+                    for (int i = 2; i &lt;= Math.sqrt(num); i++) {
+                        if (num % i == 0) {
+                            return false;
+                        }
+                    }
+            
+                    return true; 
+                }
+            }
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+F:\JAVA2>javac bpc112.java
+
+F:\JAVA2>java A
+Enter a number to check if it's prime: 7
+7 is a prime number.
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

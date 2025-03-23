@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.io.*;
+class A{
+public static void main(String arg[])throws java.io.IOException{
+int sum=0;
+System.out.print("Enter the number:");
+InputStreamReader x= new InputStreamReader(System.in);
+BufferedReader obj = new BufferedReader(x);
+int a = Integer.parseInt(obj.readLine());
+for(int i=1;i<=a;i++){
+sum=sum+i;
+}
+System.out.println("The sum of numbers from 1 to " + a + " is: " + sum);
+
+}
+}
+
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac bpc43.java
+
+            F:\JAVA>java A
+            Enter the number:10
+            The sum of numbers from 1 to 10 is: 55
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

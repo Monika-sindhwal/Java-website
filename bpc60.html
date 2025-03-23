@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.io.*;
+            class A{
+            public static void main(String x[]) throws IOException{
+            InputStreamReader isr=new InputStreamReader(System.in);
+            BufferedReader obj= new BufferedReader(isr);
+            System.out.println("Enter an integer:");
+            int num=Integer.parseInt(obj.readLine());
+            for(int i=1;i<=num;i++){
+            System.out.println("Cube of " +i+" is:"+i*i*i);
+            }
+            }
+            }
+                
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac bpc60.java
+
+            F:\JAVA>java A
+            Enter an integer:
+            5
+            Cube of 1 is:1
+            Cube of 2 is:8
+            Cube of 3 is:27
+            Cube of 4 is:64
+            Cube of 5 is:125
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

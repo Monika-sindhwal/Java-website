@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.io.*;
+
+            class CGPACalculator {
+            
+                public static void main(String[] args)throws java.io.IOException {
+            BufferedReader br=new BufferedReader(new InputStreamReader(System.in));        
+            
+                    System.out.print("Enter the number of subjects: ");
+                    int numSubjects = Integer.parseInt(br.readLine());
+                    
+             double[] marksObtained = new double[numSubjects];
+                    double[] maxMarks = new double[numSubjects];
+                    double[] cgpaValues = new double[numSubjects];
+                            
+            
+                    for (int i = 0; i < numSubjects; i++) {
+                        System.out.print("Enter marks obtained in subject " + (i + 1) + ": ");
+                        marksObtained[i] = Integer.parseInt(br.readLine());
+                        System.out.print("Enter maximum marks for subject " + (i + 1) + ": ");
+                        maxMarks[i] = Integer.parseInt(br.readLine());
+                    }
+                    
+                    for (int i = 0; i < numSubjects; i++) {
+                        cgpaValues[i] = (marksObtained[i] / maxMarks[i]) * 10;
+                    }
+                    
+                    double totalCGPA = 0;
+                    for (int i = 0; i < numSubjects; i++) {
+                        totalCGPA += cgpaValues[i];
+                    }
+                    double averageCGPA = totalCGPA / numSubjects;
+                    
+                    double percentage = averageCGPA * 10;
+                    
+                    System.out.println("Average CGPA: "+ averageCGPA);
+                    System.out.println("CGPA Percentage: "+ percentage+"%");
+                    
+                }
+            }
+                
+              
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            E:\bca4214>javac 46.java
+
+            E:\bca4214>java CGPACalculator
+            Enter the number of subjects: 5
+            Enter marks obtained in subject 1: 99
+            Enter maximum marks for subject 1: 100
+            Enter marks obtained in subject 2: 98
+            Enter maximum marks for subject 2: 100
+            Enter marks obtained in subject 3: 17
+            Enter maximum marks for subject 3: 100
+            Enter marks obtained in subject 4: 99
+            Enter maximum marks for subject 4: 100
+            Enter marks obtained in subject 5: 98
+            Enter maximum marks for subject 5: 100
+            Average CGPA: 8.220000000000002
+            CGPA Percentage: 82.20000000000002%
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

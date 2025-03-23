@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.io.*;
+class A{
+public static void main(String x[])throws java.io.IOException{
+InputStreamReader isr= new InputStreamReader(System.in);
+BufferedReader obj= new BufferedReader(isr);
+System.out.println("Enter first number:");
+int num1=Integer.parseInt(obj.readLine());
+System.out.println("Enter second number:");
+int num2=Integer.parseInt(obj.readLine());
+System.out.println("Enter third number:");
+int num3=Integer.parseInt(obj.readLine());
+System.out.println("Enter fourth number:");
+int num4=Integer.parseInt(obj.readLine());
+System.out.println("Enter fifth number:");
+int num5=Integer.parseInt(obj.readLine());
+int sum=num1+num2+num3+num4+num5;
+double average=(sum/5);
+System.out.println("Sum="+sum);
+System.out.println("Average="+average);
+}
+}
+
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            D:\java4231>javac bpc57.java
+
+            D:\java4231>java A
+            Enter first number:
+            78
+            Enter second number:
+            79
+            Enter third number:
+            80
+            Enter fourth number:
+            81
+            Enter fifth number:
+            82
+            Sum=400
+            Average=80.0
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

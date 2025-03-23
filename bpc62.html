@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.io.*;
+class A{
+static int sum=0;
+public static void main(String x[]) throws IOException{
+int i;
+InputStreamReader isr=new InputStreamReader(System.in);
+BufferedReader obj= new BufferedReader(isr);
+System.out.print("Enter an integer:");
+int num=Integer.parseInt(obj.readLine());
+for( i=1;i<=num;i++){
+System.out.println(num + "*" + i +" = " + num*i);
+}
+}
+}
+
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac bpc62.java
+
+            F:\JAVA>java A
+            Enter an integer:10
+            10*1 = 10
+            10*2 = 20
+            10*3 = 30
+            10*4 = 40
+            10*5 = 50
+            10*6 = 60
+            10*7 = 70
+            10*8 = 80
+            10*9 = 90
+            10*10 = 100
+            
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

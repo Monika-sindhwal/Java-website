@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.util.Scanner;
+
+            class A {
+                public static double calculatePentagonArea(double sideLength) {
+                    return (1.0 / 4) * Math.sqrt(5 * (5 + 2 * Math.sqrt(5))) * Math.pow(sideLength, 2);
+                }
+            
+                public static void main(String[] args) {
+                    Scanner scanner = new Scanner(System.in);
+                    
+                    System.out.print("Enter the length of a side of the pentagon: ");
+                    double sideLength = scanner.nextDouble();
+                    
+                    double area = calculatePentagonArea(sideLength);
+                    System.out.printf("The area of the pentagon is: %.2f", area);
+                }
+            }
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA2>javac bpc127.java
+
+            F:\JAVA2>java A
+            Enter the length of a side of the pentagon: 5
+            The area of the pentagon is: 43.01
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

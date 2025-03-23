@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.io.*;
+
+class A {
+    public static void main(String[] args) throws IOException {
+       
+ BufferedReader reader = new BufferedReader(new     InputStreamReader(System.in));
+            
+             System.out.print("Enter the size of the array: ");
+            int size = Integer.parseInt(reader.readLine());
+
+           
+            int[] arr = new int[size];
+
+            
+            
+            for (int i = 0; i < size; i++) {
+System.out.print("Enter " + (i+1) + " element:");
+                arr[i] = Integer.parseInt(reader.readLine());
+            }
+int sum=0;
+for (int i = 0; i < size; i++) {
+sum=sum+arr[i];
+            }
+System.out.print("\nAverage=" + (sum/size));
+
+
+
+
+                }
+}
+
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac bpc84.java
+
+            F:\JAVA>java A
+            Enter the size of the array: 5
+            Enter 1 element:1
+            Enter 2 element:2
+            Enter 3 element:3
+            Enter 4 element:4
+            Enter 5 element:5
+            
+            Average=3
+            
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

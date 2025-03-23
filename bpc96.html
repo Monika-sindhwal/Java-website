@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class A {
+                public static void main(String st[]) {
+                    int  max, min;
+                   
+            
+                  int arr[]={1,78,90,6,5,80};
+                    System.out.println("Original array is:");
+            
+                    for (int i = 0; i < 6; i++) {
+                        System.out.print(arr[i] + " ");
+                    }
+                    
+                    max = arr[0];
+                    min = arr[0];
+            
+                    System.out.println("\nLargest element in array is:");
+            
+                    for (int i = 1; i < 6; i++) {
+                        if (max < arr[i])
+                            max = arr[i];
+            
+                        if (min > arr[i])
+                            min = arr[i];
+                    }
+            
+                    System.out.print(max);
+            
+                    System.out.println("\nSmallest element in array is:");
+                    System.out.println(min);
+            
+                    System.out.println("Difference between largest and smallest element is: " + (max - min));
+                }
+            }
+            
+             
+              
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA2>javac bpc96.java
+
+            F:\JAVA2>java A
+            Original array is:
+            1 78 90 6 5 80
+            Largest element in array is:
+            90
+            Smallest element in array is:
+            1
+            Difference between largest and smallest element is: 89
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

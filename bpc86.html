@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.io.*;
+
+class A {
+    public static void main(String[] args) throws IOException {
+       
+ BufferedReader reader = new BufferedReader(new     InputStreamReader(System.in));
+            
+             System.out.print("Enter the size of the array: ");
+            int size = Integer.parseInt(reader.readLine());
+
+           
+            int[] arr = new int[size];
+
+            
+            
+            for (int i = 0; i < size; i++) {
+System.out.print("Enter " + (i+1) + " element:");
+                arr[i] = Integer.parseInt(reader.readLine());
+            }
+System.out.println("Enter array is:");
+ for (int i = 0; i < size; i++) {
+System.out.print( arr[i]+" ");
+              
+            }
+int max=arr[0];
+for(int i=1;i&lt;size;i++){
+if(arr[i]>max)
+max=arr[i];
+}
+int min=arr[0];
+for(int i=1;i&lt;size;i++){
+if(arr[i]&lt;min)
+min=arr[i];
+}
+System.out.println("\nMax element="+max+"  Min element="+min);
+
+
+
+}}
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac bpc86.java
+
+            F:\JAVA>java A
+            Enter the size of the array: 5
+            Enter 1 element:10
+            Enter 2 element:20
+            Enter 3 element:30
+            Enter 4 element:40
+            Enter 5 element:50
+            Enter array is:
+            10 20 30 40 50
+            Max element=50  Min element=10
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

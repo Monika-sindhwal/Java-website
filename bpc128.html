@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.util.Scanner;
+
+            class A {
+                public static void main(String[] args) {
+                    Scanner scanner = new Scanner(System.in);
+                    System.out.print("Enter a number: ");
+                    int num = scanner.nextInt();
+            
+                    if (isEven(num)) {
+                        System.out.println(num + " is an even number.");
+                    } else {
+                        System.out.println(num + " is not an even number.");
+                    }
+                }
+            
+               
+                public static boolean isEven(int num) {
+                    return num % 2 == 0;
+                }
+            } 
+              
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA2>javac bpc128.java
+
+            F:\JAVA2>java A
+            Enter a number: 8
+            8 is an even number.
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

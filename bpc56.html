@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.io.*;
+
+            class A {
+               public static void main(String[] args) throws IOException {
+                  
+                   InputStreamReader isr = new InputStreamReader(System.in);
+                   BufferedReader br = new BufferedReader(isr);
+           
+                  
+                   System.out.print("Enter a year: ");
+                   int year = Integer.parseInt(br.readLine());
+           
+                   
+                   boolean L = (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0));
+           
+                   
+                   if (L) {
+                       System.out.println(year + " is a leap year.");
+                   } else {
+                       System.out.println(year + " is not a leap year.");
+                   }
+               }
+           }
+           
+                 
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            D:\java4231>java A
+            Enter a year: 1990
+            1990 is not a leap year.
+            
+            D:\java4231>javac bpc56.java
+            
+            D:\java4231>java A
+            Enter a year: 2024
+            2024 is a leap year.
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

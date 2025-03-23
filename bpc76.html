@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.text.SimpleDateFormat;
+            import java.util.Date;
+            
+            public class CurrentDateTime {
+                public static void main(String[] args) {
+                 
+                    Date now = new Date();
+                    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+            
+                   
+                    String formattedDate = formatter.format(now);
+            
+                  
+                    System.out.println("Current Date and Time: " + formattedDate);
+                }
+            }
+                 
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            Current Date and Time: 03/11/2024 12:30:45
+
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

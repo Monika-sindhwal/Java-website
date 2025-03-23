@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.io.*;
+
+class A {
+    public static void main(String[] args) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        int positiveCount = 0;
+        int negativeCount = 0;
+        int zeroCount = 0;
+        String choice;
+
+        do {
+            System.out.print("Enter a number: ");
+            int number = Integer.parseInt(reader.readLine());
+
+            if (number > 0) {
+                positiveCount++;
+            } else if (number < 0) {
+                negativeCount++;
+            } else {
+                zeroCount++;
+            }
+
+            System.out.print("Do you want to enter another number? (yes/no): ");
+            choice = reader.readLine();
+
+        } while (choice.equalsIgnoreCase("yes"));
+
+        System.out.println("Positive numbers: " + positiveCount);
+        System.out.println("Negative numbers: " + negativeCount);
+        System.out.println("Zeros: " + zeroCount);
+    }
+}
+
+
+
+
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac bpc114.java
+
+            F:\JAVA>java A
+            Enter a number: 34
+            Do you want to enter another number? (yes/no): yes
+            Enter a number: 90
+            Do you want to enter another number? (yes/no): yes
+            Enter a number: -54
+            Do you want to enter another number? (yes/no): yes
+            Enter a number: 0
+            Do you want to enter another number? (yes/no): no
+            Positive numbers: 2
+            Negative numbers: 1
+            Zeros: 1
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

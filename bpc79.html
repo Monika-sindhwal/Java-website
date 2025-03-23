@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java. io. *;
+class A{
+public static void main(String args[]) throws IOException {
+    InputStreamReader isr=new InputStreamReader (System.in);
+    BufferedReader obj= new BufferedReader(isr);
+System. out. print("Enter the string:");
+    String str=obj.readLine();
+System. out. println("\nOriginal String is:" + str);
+String reversed = "";
+        for (int i = str.length() - 1; i >= 0; i--) {
+            reversed += str.charAt(i);
+        }
+    System. out. println("\nReversed String is:" + reversed);
+}
+}
+
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            Enter the string:hello world
+
+            Original String is:hello world
+            
+            Reversed String is:dlrow olleh
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

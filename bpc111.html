@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.io.*;
+class A{
+public static void main(String x[]) throws java.io.IOException{
+int sumeven=0,sumodd=0;
+InputStreamReader isr=new InputStreamReader(System.in);
+BufferedReader obj= new BufferedReader(isr);
+System.out.print("Enter the number of elements:");
+int size=Integer.parseInt(obj.readLine());
+int arr[]=new int[size];
+System.out.println("Enter the elements:");
+for(int i=0;i&lt;arr.length;i++){
+System.out.print("Enter "+ (i+1) + " element");
+arr[i]=Integer.parseInt(obj.readLine());
+}
+
+for(int i=0;i&lt;arr.length;i++){
+if(arr[i]%2==0)
+sumeven=sumeven+arr[i];
+else
+sumodd=sumodd+arr[i];
+}
+System.out.println("\nSum of even numbers: "+ sumeven);
+
+System.out.println("Sum of odd numbers: "+ sumodd);
+}
+}
+
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            D:\java4214>javac bpc111.java
+
+            D:\java4214>java A
+            Enter the number of elements:6
+            Enter the elements:
+            Enter 1 element:1
+            Enter 2 element:2
+            Enter 3 element:3
+            Enter 4 element:4
+            Enter 5 element:5
+            Enter 6 element:6
+            Sum of even numbers: 12
+            Sum of odd numbers: 9
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

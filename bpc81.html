@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class A {
+                public static void main(String[] args) {
+                   
+                    String s1 = "This is line one.\nThis is line two.\nThis is line three.\nThis is line four.\nhello world";
+            
+            
+                    int count = countLines(s1);
+            
+                  
+                    System.out.println("Total number of lines: " + count);
+                }
+            
+               
+                public static int countLines(String str) {
+                    
+                    str = str.trim();
+                    
+                   
+                    if (str.isEmpty()) {
+                        return 0;
+                    }
+            
+                 
+                    String[] lines = str.split("\n");
+                    return lines.length;
+                }
+            }
+              
+              
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA2>javac bpc81.java
+
+            F:\JAVA2>java A
+            Total number of lines: 5
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.util.Scanner;
+
+            class A{
+                public static void main(String[] args) {
+                    Scanner scanner = new Scanner(System.in);
+                    System.out.print("Enter an integer: ");
+                    int number = scanner.nextInt();
+            
+                   
+                    
+                        long factorial = calculateFactorial(number);
+                        System.out.println("The factorial of " + number + " is: " + factorial);
+                  
+                }
+            
+                
+                public static long calculateFactorial(int n) {
+                    
+                    if (n == 0 || n == 1) {
+                        return 1;
+                    } else {
+                        return n * calculateFactorial(n - 1);
+                    }
+                }
+            }
+              
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA2>javac bpc132.java
+
+            F:\JAVA2>java A
+            Enter an integer: 5
+            The factorial of 5 is: 120
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

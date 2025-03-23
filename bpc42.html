@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.io.InputStreamReader;
+class A{
+public static void main(String arg[])throws java.io.IOException{
+InputStreamReader x= new InputStreamReader(System.in);
+int input=x.read();
+char a = (char) input;
+a=Character.toLowerCase(a);
+ 
+ if (a == 'a' || a == 'e' || a == 'i' || a == 'o' || a == 'u') {
+            System.out.println("Entered character is a vowel");
+        } else
+System.out.println("Entered character is a consonant");
+}
+}
+
+
+
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac bpc42.java
+
+            F:\JAVA>java A
+            U
+            Entered character is a vowel
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

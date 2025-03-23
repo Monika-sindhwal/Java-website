@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class A{
+                public static void main(String x[]) throws  java.io.IOException{
+                int op=1,num1=9,num2=0;
+                while (op!=5){
+                System.out.println("Enter the operation you want to perform:"+"\n1.Addition"+"\n2.Subtraction"+"\n3.Multiplication"+"\n4.Division"+"\n5.Exit");
+                InputStreamReader isr= new InputStreamReader(System.in);
+                BufferedReader obj= new BufferedReader(isr);
+                
+                op=Integer.parseInt(obj.readLine());
+                if(op!=5){
+                System.out.println("Enter first number:");
+                num1=Integer.parseInt(obj.readLine());
+                
+                System.out.println("Enter second number:");
+                 num2=Integer.parseInt(obj.readLine());
+                
+                }
+                
+                if(op==1)
+                System.out.println("Sum of entered numbers is:"+ (num1+num2));
+                else if(op==2)
+                System.out.println("Difference of entered numbers is:"+ (num1-num2));
+                
+                else if(op==3)
+                System.out.println("Product of entered numbers is:"+ (num1*num2));
+                
+                else if(op==4)
+                System.out.println("division of entered numbers is:"+ (num1/num2));
+                else if(op==5)
+                System.out.println("Exiting");
+                
+                else
+                System.out.println("Enter valid numbers");
+                }
+                }
+                }
+                
+                
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            E:\jyoti>javac bpc68.java
+
+            E:\jyoti>java A
+            Enter the operation you want to perform:
+            1.Addition
+            2.Subtraction
+            3.Multiplication
+            4.Division
+            5.Exit
+            1
+            Enter first number:
+            8
+            Enter second number:
+            10
+            Sum of entered numbers is:18
+            Enter the operation you want to perform:
+            1.Addition
+            2.Subtraction
+            3.Multiplication
+            4.Division
+            5.Exit
+            2
+            Enter first number:
+            10
+            Enter second number:
+            8
+            Difference of entered numbers is:2
+            Enter the operation you want to perform:
+            1.Addition
+            2.Subtraction
+            3.Multiplication
+            4.Division
+            5.Exit
+            3
+            Enter first number:
+            10
+            Enter second number:
+            8
+            Product of entered numbers is:80
+            Enter the operation you want to perform:
+            1.Addition
+            2.Subtraction
+            3.Multiplication
+            4.Division
+            5.Exit
+            5
+            Exiting
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.io.*;
+class A{
+static int sum=0;
+public static void main(String x[]) throws IOException{
+
+InputStreamReader isr=new InputStreamReader(System.in);
+BufferedReader obj= new BufferedReader(isr);
+System.out.print("Enter first integer:");
+int num1=Integer.parseInt(obj.readLine());
+System.out.print("Enter second integer:");
+int num2=Integer.parseInt(obj.readLine());
+System.out.print("Enter third integer:");
+int num3=Integer.parseInt(obj.readLine());
+if (num1 == num2 && num2 == num3) {
+                System.out.println("All three numbers are equal.");
+            } else {
+                System.out.println("The numbers are not all equal.");
+            }
+}
+}
+
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac bpc65.java
+
+            F:\JAVA>java A
+            Enter first integer:6
+            Enter second integer:6
+            Enter third integer:6
+            All three numbers are equal.
+            
+            F:\JAVA>javac bpc65.java
+            
+            F:\JAVA>java A
+            Enter first integer:8
+            Enter second integer:9
+            Enter third integer:9
+            The numbers are not all equal.
+            
+            
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.io.*;
+
+            class A {
+                public static void main(String[] args) throws java.io.IOException {
+                    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            
+                    System.out.println("Enter the string: ");
+                    String str = br.readLine();
+            
+                    System.out.println("Enter  character to be : ");
+                    char r = (char) br.read();
+            
+                    String modified = str.replace(Character.toString(r), "");
+            
+                    System.out.println("String after removing '" + r + "': " + modified);
+                }
+            }
+                        
+            
+              
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA2>javac bpc78.java
+
+            F:\JAVA2>java A
+            Enter the string:
+            hello
+            Enter  character to be :
+            e
+            String after removing 'e': hllo
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>
