@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class A {
+                public static void main(String[] args) {
+                    System.out.println(isMiddlePoint(3, 3, 4)); 
+                }
+                public static boolean isMiddlePoint(int a, int b, int c) {
+                    if ((a + c) % 2 == 0 && b == (a + c) / 2) {
+                        return true;
+                    }
+                         if ((b + c) % 2 == 0 && a == (b + c) / 2) {
+                        return true;
+                    }
+                         if ((a + b) % 2 == 0 && c == (a + b) / 2) {
+                        return true;
+                    }
+                         return false;
+                }
+            }
+            
+            
+              
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+           
+            F:\JAVA>javac func12.java
+
+            F:\JAVA>java A
+            false 
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

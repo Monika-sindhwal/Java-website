@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class A extends Throwable{
+
+            }
+            
+            class Main{
+            static void checkVowels(String st){
+            A vowels=new A();
+             try{
+              boolean isVowel = false;
+                    char str[]=st.toCharArray();
+                    for (int i = 0; i < str.length; i++) {
+                        char ch = st.charAt(i);
+                        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
+                            ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
+                            isVowel = true;
+                            break; 
+                        }
+                    }
+            
+                    if (!isVowel) {
+                        throw vowels;
+                    }
+            
+            System.out.println("Yes, this contain vowels");
+             }
+             catch(A e){
+                 System.out.println ("It does not contain any vowels");
+                  }
+            }
+            
+            public static void main(String s[]){
+            String arr="hello";
+            String arr2="zxy";
+            System.out.print(arr+": ");
+            checkVowels(arr);
+            System.out.print(arr2 +": ");
+            checkVowels(arr2);
+                }
+            
+            }
+            
+            
+            </pre
+        >
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac e7.java
+
+            F:\JAVA>java Main
+            hello: Yes, this contain vowels
+            zxy: It does not contain any vowels
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

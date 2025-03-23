@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.io.BufferedReader;
+            import java.io.FileReader;
+            import java.io.InputStreamReader;
+            import java.io.IOException;
+            
+            class A {
+                public static void main(String args[]) throws IOException {
+                    System.out.println("Give the path for the file:");
+                    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+                    String path = br.readLine();
+            
+                    try {
+                        BufferedReader fileReader = new BufferedReader(new FileReader(path));
+                        String line;
+                        System.out.println("The content of the file is: ");
+                        while ((line = fileReader.readLine()) != null) {
+                            System.out.println(line);
+                        }
+                        fileReader.close();
+                    } 
+                    catch (java.io.FileNotFoundException e) {
+                        System.out.println("Error: File not found at " + e.getMessage());
+                    } 
+                    catch (IOException e) {
+                        System.out.println("An I/O error occurred: " + e.getMessage());
+                    }
+                }
+            }
+            
+            
+            </pre
+        >
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA2>javac e3.java
+
+F:\JAVA2>java A
+Give the path for the file:
+bpc93.txt
+The content of the file is:
+93-array17
+94-array19
+104-BPC85
+124-bpc10
+125-bpc56
+126-bpc29
+129-bpc24
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.io.BufferedReader;
+            import java.io.FileReader;
+            import java.io.InputStreamReader;
+            import java.io.IOException;
+            
+            class PositiveNumberException extends Exception {
+                public PositiveNumberException(String message) {
+                    super(message);
+                } 
+            }
+            
+            class A {
+                public static void main(String args[]) throws IOException {
+                    System.out.println("Give the path for the file:");
+                    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+                    String path = br.readLine();
+            
+                    try {
+                        BufferedReader fileReader = new BufferedReader(new FileReader(path));
+                        String line;
+                        while ((line = fileReader.readLine()) != null) {
+                            try {
+                                int number = Integer.parseInt(line.trim());
+            
+                                if (number > 0) {
+                                    throw new PositiveNumberException("Positive number found: " + number);
+                                } else {
+                                    System.out.println("Number: " + number + " is not positive.");
+                                }
+                            } catch (NumberFormatException e) {
+                                System.out.println("Invalid number format in file: " + line);
+                            }
+                        }
+                    } catch (java.io.FileNotFoundException e) {
+                        System.out.println("File not found: " + e.getMessage());
+                    } catch (IOException e) {
+                        System.out.println("Error reading the file: " + e.getMessage());
+                    } catch (PositiveNumberException e) {
+                        System.out.println("Exception: " + e.getMessage());
+                    }
+                }
+            }
+            
+            
+            </pre
+        >
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA2>javac e4.java
+
+            F:\JAVA2>java A
+            Give the path for the file:
+            test.txt
+            Exception: Positive number found: 12
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

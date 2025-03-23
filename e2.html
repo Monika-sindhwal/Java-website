@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class Odd extends Exception {
+                public Odd(String message) {
+                   super(message);    }
+            }
+            
+            class Main {
+                static void checkOdd(int i) throws Odd {
+                    if (i % 2 != 0) {
+                        throw new Odd("Please enter an even number.");
+                    } else {
+                        System.out.println("Even number");
+                    }
+                }
+            
+              public static void main(String[] args) {
+                    try {
+                        checkOdd(87);
+                    } catch (Odd e) {
+                        System.out.println(e.getMessage());
+                    }
+                }
+            }
+            
+            </pre
+        >
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac e2.java
+
+            F:\JAVA>java Main
+            Please enter an even number.
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

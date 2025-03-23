@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class Main {
+                static int wordCount(String str) {
+                  
+                    String[] words = str.trim().split("\\s+");
+            
+                 
+                    int count = 0;
+            
+                  
+                    for (int index = 0; index < words.length; index++) {
+                     
+                        if (words[index].length() > 0) {
+                            count++;
+                        }
+                    }
+            
+                    return count;
+                }
+            
+                public static void main(String[] args) {
+                    int count = wordCount("Welcome to the world of java");
+                    System.out.println("Number of words in string is: " + count);
+                    
+                }
+            }
+            
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac str4.java
+
+            F:\JAVA>java Main
+            Number of words in string is: 6
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

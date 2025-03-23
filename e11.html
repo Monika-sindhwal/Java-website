@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class Example {
+                public static void checkNumber(int number) throws ArithmeticException {
+                    if (number < 0) {
+                        throw new ArithmeticException("Negative number not allowed.");
+                    }
+                    System.out.println("Number is valid: " + number);
+                }
+            
+                public static void main(String[] args) {
+                    try {
+                        checkNumber(-5); 
+                    } catch (ArithmeticException e) {
+                        System.out.println("Error: " + e.getMessage());
+                    }
+                }
+            }
+            
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+          
+F:\JAVA>java Example
+Error: Negative number not allowed.
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>
+ {
+    
+}

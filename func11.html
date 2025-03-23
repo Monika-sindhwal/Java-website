@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+         
+            class A {
+                public static void main(String[] args) {
+                    System.out.println(consecutivechecker(4, 5, 6)); 
+                    System.out.println(consecutivechecker(10, 15, 11)); 
+                        }
+            
+                   public static boolean consecutivechecker(int a, int b, int c) {
+                    int min = Math.min(a, Math.min(b, c));
+                    int max = Math.max(a, Math.max(b, c));
+                    int middle = a + b + c - min - max;
+            
+                    return (max - middle == 1) && (middle - min == 1);
+                }
+            }
+            
+              
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac func11.java
+
+            F:\JAVA>java A
+            true
+            false          
+            
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

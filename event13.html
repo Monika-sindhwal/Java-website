@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.awt.*;
+import java.awt.event.*;
+
+class A {
+    public static void main(String[] args) {
+        final Frame frame = new Frame("Close Frame Example"); 
+        frame.setSize(300, 200);
+        frame.setLayout(new FlowLayout());
+
+        Label label = new Label("Click the close button to close the frame.");
+        frame.add(label);
+
+        frame.addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                frame.dispose(); 
+            }
+        });
+
+        frame.setVisible(true); 
+    }
+}
+
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            <img src="Screenshot (63).png" alt="" class="img">
+        </pre>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class Main{
+                public static int smallestnum(int a,int b,int c){
+                int x=a;
+                int y=b;
+                int z=c;
+                if(x>y){
+                if(z>y)
+                return y;
+                else
+                return z;
+                }
+                else{
+                if(y>z)
+                return z;
+                else
+                return x;
+                }
+                }
+                public static void main(String x[]){
+                int num=smallestnum(8,10,5);
+                System.out.println("The smallest no. is:" + num);
+                }
+                }
+                 </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac func1.java
+
+            F:\JAVA>java Main
+            The smallest no. is:5  
+            
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class A{
+
+   
+                public static double FV(double principal, double annualInterestRate, int years) {
+                   
+                    double rate = annualInterestRate / 100.0;
+            
+                    
+                    double futureValue = principal * Math.pow((1 + rate), years);
+            
+                    return futureValue;
+                }
+            
+                public static void main(String[] args) {
+                  
+                    double principal = 10000.0;
+                    double Rate = 5.0; 
+                    int years = 20;
+            
+                    double futureValue = FV(principal, Rate, years);
+                    System.out.printf("Future investment value: %.2f%n", futureValue);
+                }
+            }
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac func5.java
+
+            F:\JAVA>java A
+            Future investment value: 26532.98
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>
