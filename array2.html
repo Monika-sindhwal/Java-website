@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class ElementFrequency {
+                public static void main(String[] args) {
+                    int arr[] = {1, 20, 2, 3, 4, 4, 4, 5,20,40};
+                    int n = arr.length;
+            
+                    boolean visited[] = new boolean[n];
+            
+                    System.out.println("Frequency of each element in the array:");
+            
+                            for (int i = 0; i < n; i++) {
+                                   if (visited[i]) {
+                            continue;
+                        }
+            
+                                  int count = 1;
+                        for (int j = i + 1; j < n; j++) {
+                            if (arr[i] == arr[j]) {
+                                count++;
+                                visited[j] = true; // Mark this element as visited
+                            }
+                        }
+            
+                         System.out.println("Element: " + arr[i] + ", Frequency: " + count);
+                    }
+                }
+            }
+            
+           </pre
+        >
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac arr2.java
+
+            F:\JAVA>java ElementFrequency
+            Frequency of each element in the array:
+            Element: 1, Frequency: 1
+            Element: 20, Frequency: 2
+            Element: 2, Frequency: 1
+            Element: 3, Frequency: 1
+            Element: 4, Frequency: 3
+            Element: 5, Frequency: 1
+            Element: 40, Frequency: 1
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

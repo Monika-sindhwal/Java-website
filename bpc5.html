@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.io.*;
+
+            class A {
+                public static void main(String[] args) throws IOException {
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+            
+                    System.out.print("Enter the first number: ");
+                    double num1 = Double.parseDouble(reader.readLine());
+            
+                    System.out.print("Enter the second number: ");
+                    double num2 = Double.parseDouble(reader.readLine());
+            
+                    System.out.print("Enter the third number: ");
+                    double num3 = Double.parseDouble(reader.readLine());
+            
+                    System.out.print("Enter the fourth number: ");
+                    double num4 = Double.parseDouble(reader.readLine());
+            
+                    System.out.print("Enter the fifth number: ");
+                    double num5 = Double.parseDouble(reader.readLine());
+            
+                    double average = (num1 + num2 + num3 + num4 + num5) / 5;
+            
+                    System.out.println("Average of the numbers: " + average);
+                }
+            }
+              
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac bpc5.java
+
+            F:\JAVA>java A
+            Enter the first number: 45
+            Enter the second number: 33
+            Enter the third number: 23
+            Enter the fourth number: 45
+            Enter the fifth number: 65
+            Average of the numbers: 42.2
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

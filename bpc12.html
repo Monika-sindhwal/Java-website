@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.io.*;
+class A{
+static String str;
+public static void main(String args[]) throws java.io.IOException{
+InputStreamReader obj=new InputStreamReader(System.in);
+BufferedReader a = new BufferedReader(obj);
+System.out.println("Enter the string:");
+str =a.readLine();
+int letterCount = 0;
+        int spaceCount = 0;
+        int numberCount = 0;
+        int otherCount = 0;
+char c[]=str.toCharArray();
+
+        for (int i=0;i&lt;c.length;i++) {
+        
+            if (Character.isLetter(c[i])) {
+                letterCount++;
+            } else if (Character.isSpaceChar(c[i])) {
+                spaceCount++;
+            } else if (Character.isDigit(c[i])) {
+                numberCount++;
+            } else {
+                otherCount++;
+            }
+        }
+        System.out.println("letter:"+ letterCount + "\nspaces" + spaceCount + "\n number" +numberCount + "\n Other characters" +otherCount);
+}
+}
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            Enter the string:
+            helllo welcome to my world!.
+            letter:22
+            spaces4
+             number0
+             Other characters2
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

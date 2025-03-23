@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class A{
+                public static void main(String[] args) {
+                    long totalSeconds = 10000;
+            
+                    
+                    long hours = totalSeconds / 3600;      
+                    long minutes = (totalSeconds % 3600) / 60;
+                    long seconds = totalSeconds % 60;        
+            
+                    
+                    System.out.println(totalSeconds + " seconds is equivalent to " + hours + " hours, " 
+                                       + minutes + " minutes, and " + seconds + " seconds.");
+            
+            
+                }
+            } 
+              
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA2>javac bpc19.java
+
+            F:\JAVA2>java A
+            10000 seconds is equivalent to 2 hours, 46 minutes, and 40 seconds.
+             
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

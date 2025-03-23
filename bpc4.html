@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class A{
+                int product(int a,int b){
+                return a*b;
+                }
+                int sum(int a,int b){
+                return a+b;
+                }
+                int subtract(int a,int b){
+                return a-b;
+                }
+                int remainder(int a,int b){
+                return a%b;
+                }
+                int divide(int a,int b){
+                return a/b;
+                }
+                
+                
+                public static void main(String x[]){
+                A obj= new A();
+                System.out.println("Sum of two numbers"+ "   "+obj.sum(14,31));
+                System.out.println("Difference of two numbers"+ "   "+ obj.subtract(14,31));
+                System.out.println("Product of two numbers"+ "   "+ obj.product(14,31));
+                System.out.println("Remainder of two numbers"+ "   "+ obj.remainder(14,31));
+                System.out.println("Division of two numbers"+ "   "+ obj.divide(14,31));
+                
+                }
+                }
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac bpc4.java
+
+            F:\JAVA>java A
+            Sum of two numbers   45
+            Difference of two numbers   109
+            Product of two numbers   450
+            Remainder of two numbers   0
+            Division of two numbers   95
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class A {
+                public static void main(String[] args) throws IOException {
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+            
+                    System.out.print("Enter an integer: ");
+                    int number = Integer.parseInt(reader.readLine());
+                    
+                    int sum = 0;
+                    int y = number;
+            
+                    while (y > 0) {
+                        sum += y% 10;
+                        y /= 10;
+                    }
+            
+                    System.out.println("Sum of the digits: " + sum);
+                }
+            }
+            
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac bpc10.java
+
+            F:\JAVA>java A
+            Enter an integer: 5689
+            Sum of the digits: 28
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

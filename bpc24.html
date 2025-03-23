@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class A{
+                public static void main(String x[]){
+                int y=787;
+                int reversenum=0;
+                int rem;
+                int num=y;
+                while(num>0){
+                rem = num%10;
+                reversenum=rem+reversenum*10;
+                num=num/10;
+                }
+                if(reversenum==y)
+                System.out.println("Entered number is palindrome");
+                else
+                System.out.println("Entered number is not palindrome");
+                }
+                }
+                
+        </pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            D:\java4231>javac bpc24.java
+
+            D:\java4231>java A
+            Entered number is palindrom
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

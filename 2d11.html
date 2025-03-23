@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+import java.io.*;
+
+class A {
+        public static void main(String[] args) throws IOException {
+        InputStreamReader isr = new InputStreamReader(System.in);
+        BufferedReader obj = new BufferedReader(isr);
+
+        System.out.print("Enter the number of rows (and columns) for the square matrix: ");
+        int size = Integer.parseInt(obj.readLine());
+
+        int[][] matrix = new int[size][size];
+
+        System.out.println("Enter the matrix elements:");
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                System.out.print("Element [" + i + "][" + j + "]: ");
+                matrix[i][j] = Integer.parseInt(obj.readLine());
+            }
+        }
+
+        boolean isIdentity = true;
+
+             for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                if (i == j) {
+        
+                    if (matrix[i][j] != 1) {
+                        isIdentity = false;
+                        break;
+                    }
+                } else {
+                         if (matrix[i][j] != 0) {
+                        isIdentity = false;
+                        break;
+                    }
+                }
+            }
+            if (!isIdentity) {
+                break;
+            }
+        }
+
+        if (isIdentity) {
+            System.out.println("The matrix is an identity matrix.");
+        } else {
+            System.out.println("The matrix is not an identity matrix.");
+        }
+    }
+}
+</pre>
+        <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac td11.java
+
+            F:\JAVA>java A
+            Enter the number of rows (and columns) for the square matrix: 2
+            Enter the matrix elements:
+            Element [0][0]: 1
+            Element [0][1]: 2
+            Element [1][0]: 3
+            Element [1][1]: 4
+            The matrix is not an identity matrix.
+            
+            F:\JAVA>javac td11.java
+            
+            F:\JAVA>java A
+            Enter the number of rows (and columns) for the square matrix: 3
+            Enter the matrix elements:
+            Element [0][0]: 1
+            Element [0][1]: 0
+            Element [0][2]: 0
+            Element [1][0]: 0
+            Element [1][1]: 1
+            Element [1][2]: 0
+            Element [2][0]: 0
+            Element [2][1]: 0
+            Element [2][2]: 1
+            The matrix is an identity matrix.
+
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>
