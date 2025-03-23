@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        /* Navigation Bar Styling */
+        .nav {
+            width: 100vw;
+            height: 20vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #333; /* Dark gray background for contrast */
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;    
+        }
+
+        nav img {
+            height: 8vh;
+            width: 6vw;
+            margin-left: 1rem;
+            border-radius: 10px;
+            background-color: #333; 
+        }
+
+        .navsub {
+            width: calc(100vw - 4vw); /* Adjust width considering the logo space */
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0 1rem;
+        }
+
+        .navsub a {
+            text-decoration: none;
+            color: white; /* White text for links */
+            margin: 0.5rem 1rem;
+            white-space: nowrap;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .navsub a:hover {
+            color: #fff; /* White text on hover for high contrast */
+            transform: scale(1.1); /* Slightly enlarge on hover */
+        }
+
+        /* Main Layout */
+        .main {
+            display: flex;
+            margin-top: 15vh; 
+            height: 85vh; 
+        }
+
+        #left-wrapper {
+            width: 30vw;
+            height: 100%;
+            border-right: 0.5vw solid #f5f5f5;
+            overflow-y: auto; 
+        }
+
+        #left {
+            width: 100%;
+            height: 100%;
+            border: none;
+            padding-bottom: 15vh;
+            padding-left: 1vw;
+            padding-top: 1vh;
+        }
+
+        #right {
+            width: calc(100vw - 30vw);
+            height: 100%; /* Full height for right content */
+            border: none;
+        }
+        #left::-webkit-scrollbar {
+            width: 0;
+        }
+
+        #left {
+            scrollbar-width: none;
+        }
+
+        iframe {
+            background-color: rgba(0, 0, 0, 0.4); 
+        }
+
+        /* Ensuring no scrollbar overflow on body */
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="nav">
+        <div class="navsub">
+            <a href="array.html" target="left">1D Array</a>
+            <a href="2d.html" target="left">2D Array</a>
+            <a href="jdbc.html" target="left">JDBC</a>
+            <a href="dataconversion.html" target="left">Data Conversion</a>
+            <a href="awt.html" target="left">AWT</a>
+            <a href="func.html" target="left">Functions</a>
+            <a href="inheritance.html" target="left">Inheritance</a>
+            <a href="input.html" target="left">Input/Output</a>
+            <a href="package.html" target="left">Packages</a>
+            <a href="string.html" target="left">Strings</a>
+            <a href="bpc.html" target="left">Basic Programming </a>
+            <a href="exception.html" target="left">Exception Handling</a>
+            <a href="oop.html" target="left">Object-Oriented Programming</a>
+            <a href="th.html" target="left">Multithreading</a>
+            <a href="event.html" target="left">Delegation event model
+                <a href="interface.html" target="left">Interface</a>
+                <a href="applet.html" target="left">Applets</a>
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Content Area with iframes -->
+    <div class="main">
+        <!-- Left iframe for topics -->
+        <div id="left-wrapper">
+            <iframe src="" name="left" id="left"></iframe>
+        </div>
+
+        <!-- Right iframe for content -->
+        <iframe src="" name="right" id="right"></iframe>
+    </div>
+</body>
+</html>

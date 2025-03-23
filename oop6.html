@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class Employee {
+
+                String name;
+                String jobTitle;
+                double salary;
+           
+               public Employee(String name, String jobTitle, double salary) {
+                   this.name = name;
+                   this.jobTitle = jobTitle;
+                   this.salary = salary;
+               }
+           
+               public double calculateAnnualSalary() {
+                   return salary * 12;
+               }
+           
+               public void updateSalary(double newSalary) {
+                   if (newSalary > 0) {
+                       this.salary = newSalary;
+                       System.out.println("Salary updated successfully to: " + this.salary);
+                   } else {
+                       System.out.println("Invalid salary amount. Please enter a positive value.");
+                   }
+               }
+           
+               public void displayEmployeeInfo() {
+                   System.out.println("Employee Name: " + name);
+                   System.out.println("Job Title: " + jobTitle);
+                   System.out.println("Current Salary: " + salary);
+                   System.out.println("Annual Salary: " + calculateAnnualSalary());
+               }
+           
+               public static void main(String[] args) {
+                   Employee employee = new Employee("Ram", "Programmer", 50000);
+                   employee.displayEmployeeInfo();
+                   employee.updateSalary(55000);
+                   employee.displayEmployeeInfo();
+               }
+           }
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA2>javac oop6.java
+
+            F:\JAVA2>java Employee
+            Employee Name: Ram
+            Job Title: Programmer
+            Current Salary: 50000.0
+            Annual Salary: 600000.0
+            Salary updated successfully to: 55000.0
+            Employee Name: Ram
+            Job Title: Programmer
+            Current Salary: 55000.0
+            Annual Salary: 660000.0
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

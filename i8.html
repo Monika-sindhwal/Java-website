@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            interface Playable{
+                void Play();
+                }
+                class Football implements Playable{
+                public void Play(){
+                System.out.println("Playing football");
+                }
+                }
+                class Volleyball implements Playable{
+                public void Play(){
+                System.out.println("Playing Volleyball");
+                }
+                }
+                class Basketball implements Playable{
+                public void Play(){
+                System.out.println("Playing Basketball");
+                }
+                }
+                class Main{
+                public static void main(String x[]){
+                Football obj = new Football();
+                obj.Play();
+                Volleyball obj2 = new Volleyball();
+                obj2.Play();
+                Basketball obj3 = new Basketball();
+                obj3.Play();
+                }
+                }
+                
+                
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+          
+            F:\JAVA>javac interface8.java
+
+            F:\JAVA>java Main
+            Playing football
+            Playing Volleyball
+            Playing Basketball
+            
+                
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

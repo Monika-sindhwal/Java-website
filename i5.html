@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            interface Resizable{
+                void resizeWidth(int width);
+                void resizeHeight(int height);
+                }
+                class Rectangle implements Resizable{
+                int H;
+                int W;
+                public void setHeight(int x){
+                H=x;
+                }
+                public void setWidth(int x){
+                W=x;
+                }
+                public void resizeWidth(int width){
+                W=width;
+                }
+                public void resizeHeight(int height){
+                H=height;
+                }
+                }
+                class main{
+                public static void main(String x[]){
+                Rectangle obj=new Rectangle();
+                obj.setHeight(5);
+                obj.setWidth(10);
+                System.out.println("Initial height = " + obj.H + " width =" +obj.W);
+                obj.resizeHeight(15);
+                obj.resizeWidth(20);
+                System.out.println("Final height = " + obj.H +  " width = " + obj.W);
+                }
+                }
+                
+                
+              
+                
+                
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+          
+            F:\JAVA>javac interface5.java
+                
+                F:\JAVA>java main
+                Initial height = 5 width =10
+                Final height = 15 width = 20
+                
+                
+                
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

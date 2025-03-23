@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            abstract class BankAccount {
+                double balance;
+                public abstract void deposit(double amount);
+                public abstract void withdraw(double amount);
+            
+                public double getBalance() {
+                    return balance;
+                }
+            }
+            
+            class SavingsAccount extends BankAccount {
+                static final double MIN_BALANCE = 100.0;
+            
+                
+                public SavingsAccount(double b) {
+                    balance = b;
+                }
+            
+                  public void deposit(double amount) {
+                    if (amount > 0) {
+                        balance += amount;
+                        System.out.println("Deposited " + amount + " into SavingsAccount. New balance: " + balance);
+                    } else {
+                        System.out.println("Deposit amount must be positive.");
+                    }
+                }
+            
+                
+                public void withdraw(double amount) {
+                    if (amount > 0 && balance - amount >= MIN_BALANCE) {
+                        balance -= amount;
+                        System.out.println("Withdrew " + amount + " from SavingsAccount. New balance: " + balance);
+                    } else if (amount > 0) {
+                        System.out.println("Insufficient funds or minimum balance requirement not met.");
+                    } else {
+                        System.out.println("Withdrawal amount must be positive.");
+                    }
+                }
+            }
+            class CurrentAccount extends BankAccount {
+              
+                public CurrentAccount(double b) {
+                    balance = b;
+                }
+            
+                public void deposit(double amount) {
+                    if (amount > 0) {
+                        balance += amount;
+                        System.out.println("Deposited " + amount + " into CurrentAccount. New balance: " + balance);
+                    } else {
+                        System.out.println("Deposit amount must be positive.");
+                    }
+                }
+            
+                public void withdraw(double amount) {
+                    if (amount > 0 ) {
+                        balance -= amount;
+                        System.out.println("Withdrew " + amount + " from CurrentAccount. New balance: " + balance);
+                    }         
+            else {
+                        System.out.println("Withdrawal amount must be positive.");
+                    }
+                }
+            }
+            class A {
+                public static void main(String[] args) {
+                     BankAccount savings = new SavingsAccount(500.0);
+                    BankAccount current = new CurrentAccount(1200.0);
+            
+                     savings.deposit(1500.0);
+                    savings.withdraw(4000.0);
+                    savings.withdraw(400.0);
+            
+                            current.deposit(1000.0);
+                    current.withdraw(190.0);
+                    current.withdraw(650.0);
+                }
+            }
+            
+                
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac i17.java
+
+            F:\JAVA>java A
+            Deposited 1500.0 into SavingsAccount. New balance: 2000.0
+            Insufficient funds or minimum balance requirement not met.
+            Withdrew 400.0 from SavingsAccount. New balance: 1600.0
+            Deposited 1000.0 into CurrentAccount. New balance: 2200.0
+            Withdrew 190.0 from CurrentAccount. New balance: 2010.0
+            Withdrew 650.0 from CurrentAccount. New balance: 1360.0
+            
+             
+                
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

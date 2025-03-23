@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            package p1;
+class A {
+void display() {
+System.out.println("Hello from class A.");
+}
+}
+class B {
+void display() {
+System.out.println("Hello from class B.");
+}
+}
+class C {
+void display() {
+System.out.println("Hello from class C.");
+}
+public static void main(String s[]){
+A obj=new A();
+obj.display();
+B obj2=new B();
+obj2.display();
+C obj3=new C();
+obj3.display();
+}
+}
+
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+F:\JAVA>javac -d . pack5.java
+
+F:\JAVA>java p1.C
+Hello from class A.
+Hello from class B.
+Hello from class C.
+
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

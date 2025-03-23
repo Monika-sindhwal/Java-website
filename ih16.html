@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            abstract class Shape{
+                abstract void calculateArea();
+                abstract void calculatePerimeter();
+                }
+                class Circle extends Shape{
+                void calculateArea(){
+                int r=7;
+                float area;
+                area=3.14f*r*r;
+                System.out.println("Area of the circle is "+area);
+                }
+                void calculatePerimeter(){
+                int r=7;
+                float perimeter;
+                perimeter=2*3.14f*r;
+                System.out.println("Perimeter of the circle is "+perimeter);
+                }
+                }
+                class Triangle extends Shape{
+                void calculateArea(){
+                int height=5;
+                int base=8;
+                float area= (base*height)/2f;
+                System.out.println("Area of the triangle is "+ area);
+                }
+                void calculatePerimeter(){
+                int a=6;
+                int b=4;
+                int c=5;
+                int perimeter=a+b+c;
+                System.out.println("Perimeter of the triangle is "+ perimeter);}
+                }
+                
+                class Main{
+                public static void main(String x[]){
+                Circle obj = new Circle();
+                obj.calculateArea();
+                obj.calculatePerimeter();
+                Triangle obj2 = new Triangle();
+                obj2.calculateArea();
+                obj2.calculatePerimeter();
+                
+                }
+                }
+                
+                
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac i16.java
+            F:\JAVA>java Main
+            Area of the circle is 153.86002
+            Perimeter of the circle is 43.960003
+            Area of the triangle is 20.0
+            Perimeter of the triangle is 15
+            
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

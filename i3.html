@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            interface Flyable{
+                void fly_obj();
+                }
+                class Spacecraft implements Flyable{
+                public void fly_obj(){
+                System.out.println("Spacecraft is flying");
+                }
+                }
+                class Airplane implements Flyable{
+                public void fly_obj(){
+                System.out.println("Airplane is flying");
+                }
+                }
+                class Helicopter implements Flyable{
+                public void fly_obj(){
+                System.out.println("Helicopter is flying");
+                }
+                }
+                class Main{
+                public static void main(String x[]){
+                Spacecraft obj= new Spacecraft();
+                obj.fly_obj();
+                Airplane obj2= new Airplane();
+                obj2.fly_obj();
+                Helicopter obj3= new Helicopter();
+                obj3.fly_obj();
+                }
+                }
+                
+                
+                
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac interface3.java
+
+            F:\JAVA>java Main
+            Spacecraft is flying
+            Airplane is flying
+            Helicopter is flying
+            
+             
+            
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

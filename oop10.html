@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class Student {
+                String name;
+                int grade;
+                String[] courses;
+                int courseCount; 
+                Student(String n, int g) {
+                    name = n;
+                    grade = g;
+                    courses = new String[10];        
+                    courseCount = 0;          
+                }
+            
+                public void course_add(String course) {
+                    if (courseCount >= courses.length) {
+                        System.out.println("Cannot add more than 10 courses");
+                        return;
+                    }
+            
+                    for (int i = 0; i < courseCount; i++) {
+                        if (courses[i].equals(course)) {
+                            System.out.println(course + " is already enrolled.");
+                            return;
+                        }
+                    }
+            
+                    courses[courseCount] = course;
+                    courseCount++; 
+                    System.out.println(course + " added to " + name + "'s courses.");
+                }
+            
+                
+                public void course_remove(String course) {
+                    for (int i = 0; i < courseCount; i++) {
+                        if (courses[i].equals(course)) {
+                            
+                            for (int j = i; j < courseCount - 1; j++) {
+                                courses[j] = courses[j + 1];
+                            }
+                            courses[courseCount - 1] = null;
+                            courseCount--;
+                            System.out.println(course + " removed from " + name + "'s courses.");
+                            return;
+                        }
+                    }
+                    System.out.println(course + " is not enrolled.");
+                }
+            
+                public void display() {
+                    System.out.println("Student Name: " + name);
+                    System.out.println("Grade: " + grade);
+                    System.out.print("Courses: ");
+                    if (courseCount == 0) {
+                        System.out.println("No couse enrolled");
+                    } else {
+                        for (int i = 0; i < courseCount; i++) {
+                            System.out.print(courses[i]);
+                            if (i < courseCount - 1) {
+                                System.out.print(", ");
+                            }
+                        }
+                        System.out.println();
+                    }
+                }
+            
+                public static void main(String[] args) {
+                    Student student = new Student("ABC", 10);
+                    student.course_add("Mathematics");
+                    student.course_add("SST");
+                 
+                    student.course_remove("SST");
+            
+                     student.display();
+                }
+            }
+            
+            
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac oop10.java
+
+            F:\JAVA>java Student
+            Mathematics added to ABC's courses.
+            SST added to ABC's courses.
+            SST removed from ABC's courses.
+            Student Name: ABC
+            Grade: 10
+            Courses: Mathematics
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            package p2;
+        
+            public class Abc {
+                protected int x = 20;
+            
+                protected void display() {
+                    System.out.println("hii,i am protected members from public class");
+                }
+            }
+            
+            class Xyz {
+                public static void main(String s[]) {
+                    Abc obj = new Abc();
+                    obj.display();
+                }
+            }
+            
+    
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            D:\java>javac -d . Abc.java
+
+            D:\java>java p2.Xyz
+            hii,i am protected members from public class
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

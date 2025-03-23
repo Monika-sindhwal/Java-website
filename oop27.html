@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class BankAccount {
+                private String accountnumber; 
+                private double balance;
+                
+                public String getaccountnumber() {
+                    return accountnumber;
+                }
+            
+                public void setaccountnumber(String n) {
+                    accountnumber = n;
+                }
+            
+                public double getBalance() {
+                    return balance;
+                }
+            
+                    public void setBalance(double a) {
+                    balance = a;
+                }
+                    public static void main(String[] args) {
+                     BankAccount obj = new BankAccount();
+            
+                    obj.setaccountnumber("PNB0978967800");
+                    obj.setBalance(2000000);
+                 
+            
+                    
+                    System.out.println("Account no.: " + obj.getaccountnumber());
+                    System.out.println("Balance: " + obj.getBalance());
+                       }
+            }
+            
+            
+                
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac oop27.java
+
+            F:\JAVA>java BankAccount
+            Account no.: PNB0978967800
+            Balance: 2000000.0
+              
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

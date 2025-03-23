@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+          class TrafficLight {
+            String color;
+            int duration;
+        
+            public TrafficLight(String c, int d) {
+                color = c;
+                duration = d;
+            }
+        
+            public void changeColor(String newColor, int newDuration) {
+                color = newColor;
+                duration = newDuration;
+            }
+        
+            public boolean isRed() {
+                return this.color.equalsIgnoreCase("red");
+            }
+        
+            public boolean isGreen() {
+                return this.color.equalsIgnoreCase("green");
+            }
+        
+            public String getColor() {
+                return color;
+            }
+        
+            public int getDuration() {
+                return duration;
+            }
+        }
+        
+        class Main {
+            public static void main(String[] args) {
+                TrafficLight light = new TrafficLight("Red", 30);
+                System.out.println("Current color: " + light.getColor());
+                System.out.println("Is it red? " + light.isRed());
+                
+                light.changeColor("Green", 45);
+                System.out.println("Current color: " + light.getColor());
+                System.out.println("Is it green? " + light.isGreen());
+            }
+        }
+        
+        
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+          F:\JAVA>javac oop8.java
+
+          F:\JAVA>java Main
+          Current color: Red
+          Is it red? true
+          Current color: Green
+          Is it green? true
+          
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

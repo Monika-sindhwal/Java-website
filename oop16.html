@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            abstract class Shape {
+                abstract double Area();
+                abstract double Perimeter();
+            }
+            
+            class Rectangle extends Shape {
+                double length;
+                double width;
+            
+                public Rectangle(double length, double width) {
+                    this.length = length;
+                    this.width = width;
+                }
+            
+                double Area() {
+                    return length * width;
+                }
+            
+                double Perimeter() {
+                    return 2 * (length + width);
+                }
+            }
+            
+            class Circle extends Shape {
+                double radius;
+            
+                public Circle(double radius) {
+                    this.radius = radius;
+                }
+            
+                double Area() {
+                    return Math.PI * radius * radius;
+                }
+            
+                double Perimeter() {
+                    return 2 * Math.PI * radius;
+                }
+            }
+            
+            class Triangle extends Shape {
+                double side1, side2, side3;
+            
+                public Triangle(double side1, double side2, double side3) {
+                    this.side1 = side1;
+                    this.side2 = side2;
+                    this.side3 = side3;
+                }
+            
+                double Area() {
+                    double s = (side1 + side2 + side3) / 2; 
+                    return Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
+                }
+            
+                double Perimeter() {
+                    return side1 + side2 + side3;
+                }
+            }
+            
+            class A {
+                public static void main(String[] args) {
+                    Shape rectangle = new Rectangle(20, 30);
+                    Shape circle = new Circle(5);
+                    Shape triangle = new Triangle(14, 15, 16);
+            
+                    System.out.println("Rectangle Area: " + rectangle.Area());
+                    System.out.println("Rectangle Perimeter: " + rectangle.Perimeter());
+                    System.out.println("Circle Area: " + circle.Area());
+                    System.out.println("Circle Perimeter: " + circle.Perimeter());
+                    System.out.println("Triangle Area: " + triangle.Area());
+                    System.out.println("Triangle Perimeter: " + triangle.Perimeter());
+                }
+            }
+              
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA2>javac oop16.java
+
+            F:\JAVA2>java A
+            Rectangle Area: 600.0
+            Rectangle Perimeter: 100.0
+            Circle Area: 78.53981633974483
+            Circle Perimeter: 31.41592653589793
+            Triangle Area: 96.557948921878
+            Triangle Perimeter: 45.0 
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.sql.*;
+            import java.io.*;
+            class first{
+            public static void main(String x[]) throws ClassNotFoundException , SQLException,IOException{
+            Class.forName("com.mysql.cj.jdbc.Driver"); 
+            Connection c=DriverManager.getConnection("jdbc:mysql://localhost:3306/student","root","root");//throws sql exception
+            Statement st=c.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+            InputStreamReader isr= new InputStreamReader(System.in);
+            BufferedReader br= new BufferedReader(isr);
+            System.out.println("Enter the row number:");
+            int row= Integer.parseInt(br.readLine());
+            ResultSet rs = st.executeQuery("Select * from stu");
+            if (rs.absolute(row)) {
+                              System.out.println("Row " + row + ":");
+                            System.out.println("Column 1: " + rs.getString(1));
+                            System.out.println("Column 2: " + rs.getInt(2));
+                          
+                        } else {
+                            System.out.println("Row number " + row + " does not exist.");
+                        }
+            c.close();
+            }
+            }
+            
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>java -cp "C:\Program Files\Java\jdk-22\mysql-connector-j-9.0.0 (1)\mysql-connector-j-9.0.0\mysql-connector-j-9.0.0;." first
+            Enter the row number:
+            4
+            Row 4:
+            Column 1: Naina
+            Column 2: 1
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

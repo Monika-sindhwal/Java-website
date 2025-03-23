@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            abstract class Bird {
+                abstract void fly();
+                abstract void makeSound();
+            }
+            
+            class Eagle extends Bird {
+                void fly() {
+                    System.out.println("The eagle flies very high.");
+                }
+            
+                 void makeSound() {
+                    System.out.println("The eagle screeches loudly.");
+                }
+            }
+            
+            class Hawk extends Bird {
+                void fly() {
+                    System.out.println("The hawk glides swiftly through the sky.");
+                }
+            
+                    public void makeSound() {
+                    System.out.println("The hawk makes a sharp call.");
+                }
+            }
+            
+            
+            class Main {
+                public static void main(String[] args) {
+                    Bird obj = new Eagle();
+                    Bird obj2 = new Hawk();
+            
+                     obj.fly();
+                    obj.makeSound();
+            
+                    obj2.fly();
+                    obj2.makeSound();
+                }
+            }
+               
+                
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac i25.java
+
+            F:\JAVA>java Main
+            The eagle flies very high.
+            The eagle screeches loudly.
+            The hawk glides swiftly through the sky.
+            The hawk makes a sharp call.
+                  
+                
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

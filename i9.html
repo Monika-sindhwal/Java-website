@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            interface Searchable {
+                boolean search(String keyword);
+            }
+            
+            class Document implements Searchable {
+                 String content;
+            
+                public Document(String content) {
+                    this.content = content;
+                }
+            
+                public boolean search(String keyword) {
+                    if (content != null && content.toLowerCase().contains(keyword.toLowerCase())) {
+                        System.out.println("Keyword '" + keyword + "' found in Document.");
+                        return true;
+                    } else {
+                        System.out.println("Keyword '" + keyword + "' not found in Document.");
+                        return false;
+                    }
+                }
+            }
+            
+            class WebPage implements Searchable {
+                String content;
+            
+                public WebPage(String content) {
+                    this.content = content;
+                }
+            
+                public boolean search(String keyword) {
+                    if (content != null && content.toLowerCase().contains(keyword.toLowerCase())) {
+                        System.out.println("Keyword '" + keyword + "' found on WebPage.");
+                        return true;
+                    } else {
+                        System.out.println("Keyword '" + keyword + "' not found on WebPage.");
+                        return false;
+                    }
+                }
+            }
+            
+            class Main {
+                public static void main(String[] args) {
+                    Document doc= new Document("This is a sample document .");
+                    WebPage web = new WebPage("Welcome to the official web page of Java tutorials with coders.");
+                    String keyword = "java";
+                    doc.search(keyword);
+                    web.search(keyword);
+                }
+            }
+            
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+          
+            F:\JAVA2>javac interface9.java
+
+            F:\JAVA2>java Main
+            Keyword 'java' not found in Document.
+            Keyword 'java' found on WebPage.
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.util.Scanner;
+
+            class Student {
+             int rollNo; 
+              String name; 
+              String studentClass;
+            
+                public Student(int rollNo, String name, String studentClass) {
+                    this.rollNo = rollNo;
+                    this.name = name;
+                    this.studentClass = studentClass;
+                }
+            
+                
+                public int getRollNo() {
+                    return rollNo;
+                }
+            
+                public String getName() {
+                    return name;
+                }
+            
+                public String getStudentClass() {
+                    return studentClass;
+                }
+            
+                
+                public void displayDetails() {
+                    System.out.println("Roll No: " + rollNo + ", Name: " + name + ", Class: " + studentClass);
+                }
+            }
+            
+             class  Main {
+                public static void main(String[] args) {
+                    Scanner scanner = new Scanner(System.in);
+                    Student[] students = new Student[10]; 
+            
+                    
+                    for (int i = 0; i &lt; students.length; i++) {
+                        System.out.print("Enter name of student " + (i + 1) + ": ");
+                        String name = scanner.nextLine();
+                        System.out.print("Enter class of student " + (i + 1) + ": ");
+                        String studentClass = scanner.nextLine();
+            
+                       
+                        int rollNo = i + 1;
+                        students[i] = new Student(rollNo, name, studentClass);
+                    }
+            
+                   
+                    System.out.println("\nStudent Details:");
+                    for (Student student : students) {
+                        student.displayDetails();
+                    }
+            
+                    scanner.close();
+                }
+            }
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA2>java Main
+            Enter name of student 1: Ram
+            Enter class of student 1: 10
+            Enter name of student 2: Naina
+            Enter class of student 2: 10
+            Enter name of student 3: Kaira
+            Enter class of student 3: 9
+            Enter name of student 4: Kuhu
+            Enter class of student 4: 9
+            Enter name of student 5: Lalit
+            Enter class of student 5: 10
+            Enter name of student 6: Pihu
+            Enter class of student 6: 11
+            Enter name of student 7: Sunaina
+            Enter class of student 7: 10
+            Enter name of student 8: Aman
+            Enter class of student 8: 9
+            Enter name of student 9: Krushika
+            Enter class of student 9: 7
+            Enter name of student 10: Isha
+            Enter class of student 10: 10
+            
+            Student Details:
+            Roll No: 1, Name: Ram, Class: 10
+            Roll No: 2, Name: Naina, Class: 10
+            Roll No: 3, Name: Kaira, Class: 9
+            Roll No: 4, Name: Kuhu, Class: 9
+            Roll No: 5, Name: Lalit, Class: 10
+            Roll No: 6, Name: Pihu, Class: 11
+            Roll No: 7, Name: Sunaina, Class: 10
+            Roll No: 8, Name: Aman, Class: 9
+            Roll No: 9, Name: Krushika, Class: 7
+            Roll No: 10, Name: Isha, Class: 10
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            abstract class Shape2D {
+                abstract void draw();   
+                abstract void resize();
+            }
+            
+            class Rectangle extends Shape2D {
+                int length;
+                int breadth;
+            
+                Rectangle(int l, int b) {
+                    length = l;
+                    breadth = b;
+                }
+            
+                void draw() {
+                    System.out.println("Drawing a rectangle of length=" + length + " and breadth=" + breadth);
+                }
+            
+                void resize() {
+                    length += 1;
+                    breadth += 1;
+                    System.out.println("Resizing the rectangle to length=" + length + " and breadth=" + breadth);
+                }
+            }
+            
+            class Circle extends Shape2D {
+                int radius;
+            
+               Circle(int r) {
+                    radius = r;
+                }
+            
+                void draw() {
+                    System.out.println("Drawing a circle of radius=" + radius);
+                }
+            
+                void resize() {
+             
+                    radius += 1;
+                    System.out.println("Resizing the circle to radius=" + radius);
+                }
+            }
+            
+            class Main {
+                public static void main(String[] args) {
+                    Circle obj = new Circle(7);
+                    obj.draw();      
+                    obj.resize();    
+            
+                    Rectangle obj2 = new Rectangle(20, 40);
+                    obj2.draw();            
+                    obj2.resize(); 
+                 }
+            }
+            
+            
+                
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac i24.java
+
+            F:\JAVA>java Main
+            Drawing a circle of radius=7
+            Resizing the circle to radius=8
+            Drawing a rectangle of length=20 and breadth=40
+            Resizing the rectangle to length=21 and breadth=41
+                 
+                
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

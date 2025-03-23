@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            interface Drawable{
+                void draw();
+                }
+                class Circle implements Drawable{
+                public void draw(){
+                System.out.println("Drawing a circle");
+                }
+                }
+                class Rectangle implements Drawable{
+                public void draw(){
+                System.out.println("Drawing a Rectangle");
+                }
+                }
+                class Triangle implements Drawable{
+                public void draw(){
+                System.out.println("Drawing a Triangle ");
+                }
+                }
+                class Main{
+                public static void main(String x[]){
+                Circle obj= new Circle();
+                obj.draw();
+                Rectangle obj2= new Rectangle();
+                obj2.draw();
+                Triangle obj3= new Triangle();
+                obj3.draw();
+                }
+                }
+                
+                
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+          
+    F:\JAVA>javac interface6.java
+
+F:\JAVA>java Main
+Drawing a circle
+Drawing a Rectangle
+Drawing a Triangle
+
+
+                
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

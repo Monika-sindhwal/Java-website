@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class Employee {
+                String name;
+                 String address;
+                 double salary;
+                  String jobTitle;
+                
+                    public Employee(String name, String address, double salary, String jobTitle) {
+                        this.name = name;
+                        this.address = address;
+                        this.salary = salary;
+                        this.jobTitle = jobTitle;
+                    }
+                
+                    public double calculateBonus() {
+                        return salary * 0.10;
+                    }
+                
+                    public String generatePerformanceReport() {
+                        return name + " (" + jobTitle + ") has a salary of " + salary + ".";
+                    }
+                }
+                
+                class Manager extends Employee {
+                    private String[] projects;
+                
+                    public Manager(String name, String address, double salary, String jobTitle, String[] projects) {
+                        super(name, address, salary, jobTitle);
+                        this.projects = projects;
+                    }
+                
+                    @Override
+                    public double calculateBonus() {
+                        return salary * 0.20;
+                    }
+                
+                    public void manageProjects() {
+                        System.out.println(name + " is managing the following projects:");
+                        for (String project : projects) {
+                            System.out.println("- " + project);
+                        }
+                    }
+                
+                    @Override
+                    public String generatePerformanceReport() {
+                        return super.generatePerformanceReport() + "\nProjects Managed: " + String.join(", ", projects);
+                    }
+                }
+                
+                class Developer extends Employee {
+                    private String programmingLanguage;
+                
+                    public Developer(String name, String address, double salary, String jobTitle, String programmingLanguage) {
+                        super(name, address, salary, jobTitle);
+                        this.programmingLanguage = programmingLanguage;
+                    }
+                
+                    @Override
+                    public double calculateBonus() {
+                        return salary * 0.15;
+                    }
+                
+                    @Override
+                    public String generatePerformanceReport() {
+                        return super.generatePerformanceReport() + "\nSpecialized in: " + programmingLanguage;
+                    }
+                }
+                
+                class Programmer extends Developer {
+                    private String[] languagesKnown;
+                
+                    public Programmer(String name, String address, double salary, String jobTitle, String programmingLanguage, String[] languagesKnown) {
+                        super(name, address, salary, jobTitle, programmingLanguage);
+                        this.languagesKnown = languagesKnown;
+                    }
+                
+                    @Override
+                    public String generatePerformanceReport() {
+                        return super.generatePerformanceReport() + "\nLanguages Known: " + String.join(", ", languagesKnown);
+                    }
+                }
+                
+                class A {
+                    public static void main(String[] args) {
+                        Manager manager = new Manager("Ram", "123 Goa", 80000, "Project Manager", new String[]{"Project A", "Project B"});
+                        Developer developer = new Developer("Rajat", "456 Delhi", 60000, "Software Developer", "Java");
+                        Programmer programmer = new Programmer("Neil", "789 Bombay", 50000, "Junior Programmer", "Python", new String[]{"Java", "C++"});
+                
+                        System.out.println(manager.generatePerformanceReport());
+                        System.out.println("Bonus: " + manager.calculateBonus());
+                        manager.manageProjects();
+                        System.out.println();
+                
+                        System.out.println(developer.generatePerformanceReport());
+                        System.out.println("Bonus: " + developer.calculateBonus());
+                        System.out.println();
+                
+                        System.out.println(programmer.generatePerformanceReport());
+                        System.out.println("Bonus: " + programmer.calculateBonus());
+                    }
+                }
+                
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac i10.java
+                
+            F:\JAVA>java A
+            Ram (Project Manager) has a salary of 80000.0.
+            Projects Managed: Project A, Project B
+            Bonus: 16000.0
+            Ram is managing the following projects:
+            - Project A
+            - Project B
+            
+            Rajat (Software Developer) has a salary of 60000.0.
+            Specialized in: Java
+            Bonus: 9000.0
+            
+            Neil (Junior Programmer) has a salary of 50000.0.
+            Specialized in: Python
+            Languages Known: Java, C++
+            Bonus: 7500.0
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

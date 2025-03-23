@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class Person{
+                String name;
+                int age;
+                Person(String name,int age){
+                this.name=name;
+                this.age=age;
+                }
+                String getName(){
+                return name;
+                }
+                int getAge(){
+                return age;
+                }
+                }
+                class Main{
+                public static void main(String s[]){
+                Person obj=new Person("John",10);
+                Person obj2=new Person("Ria",20);
+                System.out.println("Name: " + obj.getName()+ ", Age: "+ obj.getAge());
+                System.out.println("Name: " + obj2.getName()+ ", Age: "+ obj2.getAge());
+                }
+                }
+                
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac oop1.java
+
+            F:\JAVA>java Main
+            Name: John, Age: 10
+            Name: Ria, Age: 20
+            
+          
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

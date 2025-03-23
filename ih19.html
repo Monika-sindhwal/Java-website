@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+          abstract class Employee {
+            String name;
+            String address;
+       
+           public Employee(String name, String address) {
+               this.name = name;
+               this.address = address;
+           }
+       
+           abstract double calculateSalary();
+           abstract void displayInfo();
+       }
+       
+       class Manager extends Employee {
+           double baseSalary;
+           double bonus;
+       
+           public Manager(String name, String address, double baseSalary, double bonus) {
+               super(name, address);
+               this.baseSalary = baseSalary;
+               this.bonus = bonus;
+           }
+       
+         
+           double calculateSalary() {
+               return baseSalary + bonus;
+           }
+       
+          
+           void displayInfo() {
+               System.out.println("Manager Name: " + name);
+               System.out.println("Address: " + address);
+               System.out.println("Total Salary: " + calculateSalary());
+           }
+       }
+       
+       class Programmer extends Employee {
+            double hourlyRate;
+           private int hoursWorked;
+       
+           public Programmer(String name, String address, double hourlyRate, int hoursWorked) {
+               super(name, address);
+               this.hourlyRate = hourlyRate;
+               this.hoursWorked = hoursWorked;
+           }
+       
+          
+           double calculateSalary() {
+               return hourlyRate * hoursWorked;
+           }
+       
+       
+           void displayInfo() {
+               System.out.println("Programmer Name: " + name);
+               System.out.println("Address: " + address);
+               System.out.println("Total Salary: " + calculateSalary());
+           }
+       }
+       
+       class A {
+           public static void main(String[] args) {
+               Manager manager = new Manager("Naina", "1920 Goa", 80000, 15000);
+               Programmer programmer = new Programmer("Bira", "45 Delhi", 100, 160);
+       
+               System.out.println("Manager Information:");
+               manager.displayInfo();
+               System.out.println();
+       
+               System.out.println("Programmer Information:");
+               programmer.displayInfo();
+           }
+       }
+        
+                
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+          F:\JAVA>javac i19.java
+
+          F:\JAVA>java A
+          Manager Information:
+          Manager Name: Naina
+          Address: 1920 Goa
+          Total Salary: 95000.0
+          
+          Programmer Information:
+          Programmer Name: Bira
+          Address: 45 Delhi
+          Total Salary: 16000.0
+           
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

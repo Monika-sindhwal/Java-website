@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.sql.*;
+            class first{
+            public static void main(String x[]) throws ClassNotFoundException , SQLException{
+            Class.forName("com.mysql.cj.jdbc.Driver"); 
+            Connection c=DriverManager.getConnection("jdbc:mysql://localhost:3306/student","root","root");//throws sql exception
+            Statement st=c.createStatement();
+            int i = st.executeUpdate("delete from stu WHERE roll_no=3;");
+            System.out.println(i+" rows are deleted");
+            c.close();
+            }
+            }
+            
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac jdbcp5.java
+
+            F:\JAVA>java -cp "C:\Program Files\Java\jdk-22\mysql-connector-j-9.0.0 (1)\mysql-connector-j-9.0.0\mysql-connector-j-9.0.0;.;" first
+            2 rows are deleted
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

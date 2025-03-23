@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            
+            abstract class Instrument {
+                abstract void play();
+                abstract void tune();
+            }
+            
+            class Glockenspiel extends Instrument {
+              
+                void play() {
+                    System.out.println("Playing the Glockenspiel.");
+                }
+            
+                void tune() {
+                    System.out.println("Tuning the Glockenspiel.");
+                }
+            }
+            
+            class Violin extends Instrument {
+             
+                void play() {
+                    System.out.println("Playing the Violin .");
+                }
+            
+                 void tune() {
+                    System.out.println("Tuning the Violin.");
+                }
+            }
+            class Main {
+                public static void main(String[] args) {
+                    Instrument obj = new Glockenspiel();
+                    Instrument obj2 = new Violin();
+            
+                    obj.play();
+                    obj.tune();
+            
+                    obj2.play();
+                    obj2.tune();
+                }
+            }
+            
+                        
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac i23.java
+
+            F:\JAVA>java Main
+            Playing the Glockenspiel.
+            Tuning the Glockenspiel.
+            Playing the Violin .
+            Tuning the Violin.
+                 
+                
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

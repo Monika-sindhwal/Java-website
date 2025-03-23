@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class Dog{
+                String name;
+                String breed;
+                Dog(String name,String breed){
+                this.name=name;
+                this.breed=breed;
+                }
+                void setName(String name){
+                this.name=name;
+                }
+                void setBreed(String breed){
+                this.breed=breed;
+                }
+                String getName(){
+                return name;
+                }
+                String getBreed(){
+                return breed;
+                }
+                }
+                class Main{
+                public static void main(String s[]){
+                Dog obj=new Dog("lofy","German Shepherd");
+                Dog obj2=new Dog("Sheru","Pit Bull");
+                System.out.println("Name :"+ obj.getName() +" Breed :"+ obj.getBreed());
+                System.out.println("Name :"+ obj2.getName() +" Breed :"+ obj2.getBreed());
+                System.out.println("After modifications");
+                obj.setName("Tuffy");
+                obj.setBreed("Bull Dog");
+                obj2.setName("Tuffy");
+                obj2.setBreed("German Shepherd");
+                System.out.println("Name :"+ obj.getName() +" Breed :"+ obj.getBreed());
+                System.out.println("Name :"+ obj2.getName()+" Breed :"+ obj2.getBreed());
+                }
+                }
+                
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            D:\java_folder\oops>javac oop2.java
+
+            D:\java_folder\oops>java Main
+            Name :lofy Breed :German Shepherd
+            Name :Sheru Breed :Pit Bull
+            After modifications
+            Name :Tuffy Breed :Bull Dog
+            Name :Tuffy Breed :German Shepherd
+          
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

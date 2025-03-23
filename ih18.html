@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            abstract class Animal{
+                abstract void eat();
+                abstract void sleep();
+                }
+                class Deer extends Animal{
+                void eat(){
+                System.out.println("Eating grass");
+                }
+                void sleep(){
+                System.out.println("Deer is sleeping");
+                }
+                }
+                class Tiger extends Animal{
+                void eat(){
+                System.out.println("Eating deer");
+                }
+                void sleep(){
+                System.out.println("Tiger is sleeping");
+                }
+                }
+                class Lion extends Animal{
+                void eat(){
+                System.out.println("Eating zebra");
+                }
+                void sleep(){
+                System.out.println("Lion is sleeping");
+                }
+                }
+                class Main{
+                public static void main(String x[]){
+                Deer obj= new Deer();
+                obj.eat();
+                obj.sleep();
+                Lion obj2= new Lion();
+                obj2.eat();
+                obj2.sleep();
+                Tiger obj3= new Tiger();
+                obj3.eat();
+                obj3.sleep();
+                }
+                }
+                
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac i18.java
+            F:\JAVA>java Main
+            Eating grass
+            Deer is sleeping
+            Eating zebra
+            Lion is sleeping
+            Eating deer
+            Tiger is sleeping
+            
+                
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

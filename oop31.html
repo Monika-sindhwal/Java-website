@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class Car {
+    
+                private String company_name;
+                private String model_name;
+                private int year;
+                private double mileage;
+            
+               
+                public Car(String company_name, String model_name, int year, double mileage) {
+                    this.company_name = company_name;
+                    this.model_name = model_name;
+                    this.year = year;
+                    this.mileage = mileage;
+                }
+                public String getCompanyName() {
+                    return company_name;
+                }
+            
+                
+                public void setCompanyName(String company_name) {
+                    this.company_name = company_name;
+                }
+            
+               
+                public String getModelName() {
+                    return model_name;
+                }
+            
+                
+                public void setModelName(String model_name) {
+                    this.model_name = model_name;
+                }
+            
+                
+                public int getYear() {
+                    return year;
+                }
+            
+                
+                public void setYear(int year) {
+                    this.year = year;
+                }
+            
+               
+                public double getMileage() {
+                    return mileage;
+                }
+            
+                
+                public static void main(String[] args) {
+                    Car car = new Car("Honda", "Accord", 2019, 25.5);
+            
+            
+                    System.out.println("Company Name: " + car.getCompanyName());
+                    System.out.println("Model Name: " + car.getModelName());
+                    System.out.println("Year: " + car.getYear());
+                    System.out.println("Mileage: " + car.getMileage());
+            
+                    car.setCompanyName("Toyota");
+                    car.setModelName("Camry");
+                    car.setYear(2021);
+            
+                    
+                    System.out.println("\nUpdated Car Details:");
+                    System.out.println("Company Name: " + car.getCompanyName());
+                    System.out.println("Model Name: " + car.getModelName());
+                    System.out.println("Year: " + car.getYear());
+                    System.out.println("Mileage: " + car.getMileage()); // 
+                }
+            }
+            
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA2>javac oop31.java
+
+            F:\JAVA2>java Car
+            Company Name: Honda
+            Model Name: Accord
+            Year: 2019
+            Mileage: 25.5
+            
+            Updated Car Details:
+            Company Name: Toyota
+            Model Name: Camry
+            Year: 2021
+            Mileage: 25.5
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

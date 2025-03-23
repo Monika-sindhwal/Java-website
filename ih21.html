@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            abstract class Vehicle {
+  
+                abstract void startEngine();
+                abstract void stopEngine();
+            }
+            
+            class Car extends Vehicle {
+                
+                void startEngine() {
+                    System.out.println("Car engine started.");
+                }
+            
+                public void stopEngine() {
+                    System.out.println("Car engine stopped.");
+                }
+            }
+            
+            class Motorcycle extends Vehicle {
+              
+                public void startEngine() {
+                    System.out.println("Motorcycle engine started.");
+                }
+            
+                public void stopEngine() {
+                    System.out.println("Motorcycle engine stopped.");
+                }
+            }
+            class Main {
+                public static void main(String[] args) {
+                    Vehicle obj = new Car();
+                    Vehicle obj2 = new Motorcycle();
+            
+                    obj.startEngine();
+                    obj2.stopEngine();
+            
+                    obj.startEngine();
+                    obj2.stopEngine();
+                }
+            }
+               
+                
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac i21.java
+            F:\JAVA>JAVA Main
+            Car engine started.
+            Motorcycle engine stopped.
+            Car engine started.
+            Motorcycle engine stopped.
+            
+                
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

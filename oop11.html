@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class Library{
+                String books[];
+                int capacity;
+                int bookCount;
+                Library(int cap){
+                books=new String [cap];
+                int bookCount=0;
+                }
+                void bookAdd(String book){
+                if(bookCount>=books.length){
+                System.out.println("Cannot add more books");
+                return;}
+                for(int i=0;i &lt; bookCount;i++){
+                if(book.equals(books[i])){
+                System.out.println(book+" is already present in library");
+                return;}
+                }
+                books[bookCount]=book;
+                bookCount++;
+                System.out.println(book + " added to the library.");
+                    }
+                 public void removeBook(String book) {
+                        for (int i = 0; i < bookCount; i++) {
+                            if (books[i].equals(book)) {
+                                for (int j = i; j < bookCount - 1; j++) {
+                                    books[j] = books[j + 1];
+                                }
+                                books[bookCount - 1] = null; 
+                                bookCount--;                                    System.out.println(book + " removed from the library.");
+                                return;
+                            }
+                  }
+                        System.out.println(book + " is not in the library.");
+                    }
+                
+                void display(){
+                if(bookCount==0){
+                System.out.println("No book present.");
+                        } else {
+                            for (int i = 0; i < bookCount; i++) {
+                                System.out.println((i + 1) + ". " + books[i]);
+                            }
+                        }
+                    }
+                public static void main(String x[]){
+                Library obj=new Library(20);
+                obj.bookAdd("abc");
+                obj.bookAdd("xyz");
+                obj.bookAdd("math");
+                obj.bookAdd("java");
+                obj.removeBook("xyz");
+                obj.display();
+                }
+                }
+                
+                
+                
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+F:\JAVA>javac obj11.java
+
+F:\JAVA>java Library
+abc added to the library.
+xyz added to the library.
+math added to the library.
+java added to the library.
+xyz removed from the library.
+1. abc
+2. math
+3. java
+
+
+
+
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

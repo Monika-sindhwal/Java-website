@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            import java.sql.*;
+            class first{
+            public static void main(String x[]) throws ClassNotFoundException , SQLException{
+            Class.forName("com.mysql.cj.jdbc.Driver"); 
+            Connection c=DriverManager.getConnection("jdbc:mysql://localhost:3306/student","root","root");//throws sql exception
+            Statement st=c.createStatement();
+            ResultSet rs = st.executeQuery("Select * from stu");
+            while(rs.next()){
+            System.out.println(rs.getInt(2)+"   "+rs.getString(1));
+            }
+            c.close();
+            }
+            }
+             
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac jdbc6.java
+
+            F:\JAVA>java -cp "C:\Program Files\Java\jdk-22\mysql-connector-j-9.0.0 (1)\mysql-connector-j-9.0.0\mysql-connector-j-9.0.0;." first
+            4   khvjh
+            2   kjbkjvb
+            4   khvjh
+            2   kjbkjvb
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

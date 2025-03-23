@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class Person{
+                String firstName;
+                String lastName;
+                void getFirstName(String x){
+                firstName=x;
+                System.out.println("Your first name is" + " "+firstName);
+                
+                }
+                void getLastName(String x){
+                lastName=x;
+                System.out.println("Your last name is" + " "+ lastName);
+                }
+                }
+                class Employee extends Person{
+                int id;
+                String jobTitle;
+                void getEmployeeId(int x){
+                id=x;
+                System.out.println("Your employee id  is"+ " " + id);
+                
+                }
+                void getLastName(String x){
+                jobTitle=x;
+                System.out.println("Your job title is" + " "+ jobTitle);
+                
+                }
+                public static void main(String x[]){
+                Employee obj= new Employee();
+                obj.getEmployeeId(4214);
+                obj.getFirstName("Monika");
+                obj.getLastName("programmer");
+                }
+                }
+                 
+                 
+                
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac i7.java
+
+            F:\JAVA>java Employee
+            Your employee id  is 4214
+            Your first name is Monika
+            Your job title is programmer
+                
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

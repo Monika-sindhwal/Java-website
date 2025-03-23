@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class Person {
+                private String name;
+                private int age;
+                private String country;
+            
+                public String getName() {
+                    return name;
+                }
+            
+                public void setName(String n) {
+                    name = n;
+                }
+            
+                public int getAge() {
+                    return age;
+                }
+            
+                    public void setAge(int a) {
+                    age = a;
+                }
+                public String getCountry() {
+                    return country;
+                }
+            
+                public void setCountry(String cou) {
+                    country = cou;
+                }
+            
+                public static void main(String[] args) {
+                     Person obj = new Person();
+            
+                    obj.setName("Raman");
+                    obj.setAge(20);
+                    obj.setCountry("India");
+            
+                    
+                    System.out.println("Name: " + obj.getName());
+                    System.out.println("Age: " + obj.getAge());
+                    System.out.println("Country: " + obj.getCountry());
+                }
+            }
+            
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac oop26.java
+
+            F:\JAVA>java Person
+            Name: Raman
+            Age: 20
+            Country: India
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

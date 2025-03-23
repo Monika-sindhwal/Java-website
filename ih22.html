@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            abstract class Person {
+   
+                abstract void eat();
+                abstract void exercise();
+           }
+           class Athlete extends Person {
+             
+              void eat() {
+                   System.out.println("Athlete eats a balanced diet.");
+               }
+           
+               
+               void exercise() {
+                   System.out.println("Athlete exercises daily.");
+               }
+           }
+           
+           class LazyPerson extends Person {
+              
+               void eat() {
+                   System.out.println("Lazy person eats fast food.");
+               }
+           
+               
+               void exercise() {
+                   System.out.println("Exercises once in a month.");
+               }
+           }
+            class Main {
+               public static void main(String[] args) {
+                   Person athlete = new Athlete();
+                   Person lazyPerson = new LazyPerson();
+           
+                   
+                   athlete.eat();
+                   athlete.exercise();
+           
+                           lazyPerson.eat();
+                   lazyPerson.exercise();
+               }
+           }
+             
+                
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac i22.java
+
+            F:\JAVA>java Main
+            Athlete eats a balanced diet.
+            Athlete exercises daily.
+            Lazy person eats fast food.
+            Exercises once in a month.
+              
+                
+            
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>
