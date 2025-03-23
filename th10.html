@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class myThread extends Thread {
+                public void run() {
+                    for (int i = 0; i < 5; i++) {
+                        System.out.println("Name:" + this.getName() + " Priority:" + this.getPriority());
+            
+                    }
+            
+                }
+            }
+            
+            class Main {
+                public static void main(String x[]) {
+                    myThread obj = new myThread();
+                    obj.setName("Thread1");
+                    obj.setPriority(10);
+                    myThread obj2 = new myThread();
+                    obj2.setName("Thread2");
+                    obj2.setPriority(2);
+                    obj.start();
+                    obj2.start();
+                }
+            }
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac th10.java
+            * 
+            * F:\JAVA>java Main
+            * Name:Thread1 Priority:10
+            * Name:Thread1 Priority:10
+            * Name:Thread2 Priority:2
+            * Name:Thread2 Priority:2
+            * Name:Thread2 Priority:2
+            * Name:Thread2 Priority:2
+            * Name:Thread2 Priority:2
+            * Name:Thread1 Priority:10
+            * Name:Thread1 Priority:10
+            * Name:Thread1 Priority:10
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

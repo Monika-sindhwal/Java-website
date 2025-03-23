@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+          class Counter {
+            private int count = 0;
+        
+            public synchronized void increment() {
+                count++;
+                System.out.println("Count after increment: " + count);
+            }
+        
+            public int getCount() {
+                return count;
+            }
+        }
+        
+        class IncrementThread extends Thread {
+            private final Counter counter;
+        
+            public IncrementThread(Counter counter) {
+                this.counter = counter;
+            }
+        
+            public void run() {
+                for (int i = 0; i < 10; i++) {
+                    counter.increment();
+                }
+            }
+        }
+        
+        class A {
+            public static void main(String[] args) {
+                Counter counter = new Counter();
+        
+                IncrementThread thread1 = new IncrementThread(counter);
+                IncrementThread thread2 = new IncrementThread(counter);
+        
+                thread1.start();
+                thread2.start();
+        
+                try {
+                    thread1.join();
+                    thread2.join();
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                }
+        
+                System.out.println("Final count: " + counter.getCount());
+            }
+        }
+    
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+          F:\Java> javac th11.java
+          F:\Java> java A
+         Count after increment: 1
+         Count after increment: 2
+         Count after increment: 3
+         Count after increment: 4
+         Count after increment: 5
+         Count after increment: 6
+         Count after increment: 7
+         Count after increment: 8
+         Count after increment: 9
+         Count after increment: 10
+         Count after increment: 11
+         Count after increment: 12
+         Count after increment: 13
+         Count after increment: 14
+         Count after increment: 15
+         Count after increment: 16
+         Count after increment: 17
+         Count after increment: 18
+         Count after increment: 19
+         Count after increment: 20
+         Final count: 20
+     
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

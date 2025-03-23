@@ -1,0 +1,42 @@
+
+        * {
+            font-size: 19px;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Ensure padding and border are included in the total width/height */
+        }
+        .main {
+            background-color: #f0f4f8; /* Light blue background */
+            padding: 20px;
+            min-height: 100vh; /* Ensure the container takes at least the full height of the viewport */
+        }
+        h1 {
+            font-size: larger;
+            color: black; /* Coral color for headings */
+            margin-bottom: 20px; /* Space below the heading */
+        }
+        .example {
+            border: 0.25vw solid black; /* Coral border */
+            padding: 20px;
+            background-color: #ffffff; /* White background for the example box */
+            margin-bottom: 20px; /* Space below the example box */
+        }
+        pre {
+            background-color: #f8f9fa; /* Light gray background for code */
+            border: 1px solid #ddd; /* Light gray border for code block */
+            padding: 10px;
+            overflow: auto; /* Enable scrolling if the code is too wide */
+            white-space: pre-wrap; /* Wrap lines if they are too long */
+            margin: 0;
+            font-family: monospace; /* Ensure code uses a monospaced font */
+        }
+        .ex {
+            color: black; /* Coral color for example code text */
+        }
+        .img {
+            height: 30vw;
+            width: 30vw;
+            margin: 0 auto;
+            display: block;
+        }
+        

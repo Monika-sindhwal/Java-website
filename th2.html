@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class EvenThread extends Thread {
+                public void run() {
+                    for (int i = 1; i <= 20; i++) {
+                        if (i % 2 == 0) {
+                            System.out.println("Even Thread: " + i);
+                        }
+                    }
+                }
+            }
+            
+            class OddThread extends Thread {
+                public void run() {
+                    for (int i = 1; i <= 20; i++) {
+                        if (i % 2 != 0) {
+                            System.out.println("Odd Thread: " + i);
+                        }
+                    }
+                }
+            }
+            
+            class Main {
+                public static void main(String[] args) {
+                    EvenThread evenThread = new EvenThread();
+                    OddThread oddThread = new OddThread();
+            
+                    evenThread.start();
+                    oddThread.start();
+                }
+            }
+             
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac th2.java
+
+            F:\JAVA>java Main
+            Odd Thread: 1
+            Odd Thread: 3
+            Odd Thread: 5
+            Even Thread: 2
+            Odd Thread: 7
+            Odd Thread: 9
+            Even Thread: 4
+            Even Thread: 6
+            Even Thread: 8
+            Even Thread: 10
+            Even Thread: 12
+            Odd Thread: 11
+            Even Thread: 14
+            Even Thread: 16
+            Even Thread: 18
+            Even Thread: 20
+            Odd Thread: 13
+            Odd Thread: 15
+            Odd Thread: 17
+            Odd Thread: 19
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="example">
+        <h1>CODE</h1>
+        <pre class="ex">
+            class Task implements Runnable {
+                private String taskName;
+            
+                
+                public Task(String taskName) {
+                    this.taskName = taskName;
+                }
+            
+                
+                public void run() {
+                    for (int i = 1; i <= 5; i++) {
+                        System.out.println(taskName + " - Count: " + i);
+                        try {
+                            
+                            Thread.sleep(500);
+                        } catch (InterruptedException e) {
+                            System.out.println(taskName + " interrupted");
+                        }
+                    }
+                    System.out.println(taskName + " completed.");
+                }
+            }
+            
+             class A{
+                public static void main(String[] args) {
+                    
+                    Task task1 = new Task("Task 1");
+                    Task task2 = new Task("Task 2");
+                    Task task3 = new Task("Task 3");
+            
+                    
+                    Thread thread1 = new Thread(task1);
+                    Thread thread2 = new Thread(task2);
+                    Thread thread3 = new Thread(task3);
+            
+                    
+                    thread1.start();
+                    thread2.start();
+                    thread3.start();
+                }
+            }
+            </pre>      
+                 <br />
+        <br />
+        <h1>OUTPUT</h1>
+        <pre class="ex">
+            F:\JAVA>javac th8.java
+
+            F:\JAVA>java A
+            Task 1 - Count: 1
+            Task 2 - Count: 1
+            Task 3 - Count: 1
+            Task 1 - Count: 2
+            Task 3 - Count: 2
+            Task 2 - Count: 2
+            Task 3 - Count: 3
+            Task 1 - Count: 3
+            Task 2 - Count: 3
+            Task 2 - Count: 4
+            Task 3 - Count: 4
+            Task 1 - Count: 4
+            Task 1 - Count: 5
+            Task 3 - Count: 5
+            Task 2 - Count: 5
+            Task 2 completed.
+            Task 1 completed.
+            Task 3 completed.
+           </pre
+        >
+      </div>
+    </div>
+  </body>
+</html>
